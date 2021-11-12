@@ -1,30 +1,181 @@
-
-
 @font-face {
     font-family: "Poppins-Bold";
     src: url(assets/fonts/Poppins-Bold.ttf);
 }
-.header-wrapper .navbar-collapse .custom-btn{
-    border-radius: 21px;
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+h1 {
+    font-size: 43px !important;
+    font-family: "Poppins-Bold";
+}
+
+h3 {
+    font-size: 12px !important;
+    font-family: "Poppins-Bold";
+}
+
+p {
+    font-family: "Poppins-Regular";
+    font-size: 11px;
+}
+
+.custom-btn {
+    border-radius: 22px !important;
+    border: 1px solid transparent !important;
+    padding: 11px 18px !important;
+    font-family: "Poppins-Bold";
+    font-size: 10px !important;
+}
+
+.header-wrapper .navbar-collapse .custom-btn {
     background-color: #000;
     color: white;
-    border:1px solid transparent;
-    padding: 11px 18px;
 }
-.announcement-bar{
+
+.announcement-bar {
     background-color: #3DB649;
     color: #fff;
 }
-.custom-nav{
+
+.custom-nav {
     border-top: 3px solid #9ACE00;
 }
-.custom-nav a{
+
+.custom-nav a {
     font-family: "Poppins-Bold";
     color: #000;
     font-size: 10px;
 }
 
+.theme-accent {
+    color: #B704B7;
+}
 
 /* Hero Section  */
 
+.hero-section {
+    padding: 100px 0px;
+    background: #000;
+    color: #fff;
+}
 
+.hero-section p {
+    font-family: 'Poppins-Bold';
+}
+
+.hero-section h1 {
+    color: #FF7F00;
+}
+
+.hero-section .custom-btn {
+    background-color: #B704B7;
+}
+
+/* End Hero Section  */
+
+/* Latest Posts */
+
+.latestposts-section {
+    margin-top: -30px;
+    padding-bottom: 70px;
+}
+
+
+.latestposts-section .top-title-pill {
+    background: #fff;
+    color: #000;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+    padding: 20px 40px;
+    font-family: 'Poppins-Bold';
+}
+
+.category-pill{
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    font-family: 'Poppins-Bold';
+    color: #DCDCDC;
+    padding: 2px 6px;
+    font-size: 11px;
+}
+
+.floor-prices{
+    padding-top: 43px;
+}
+.floor-prices .value{
+    color: #989696;
+    font-family: 'Poppins-Medium';
+    font-size: 11px;
+}
+.latestposts-section .custom-card{
+    margin-bottom: 49px;
+}
+.latestposts-section .card-title{
+    font-size: 13px;
+    font-family: 'Poppins-Bold';
+}
+.latestposts-section .card-link{
+    color: #000;
+    font-size: 10px;
+    font-family: 'Poppins-Bold';
+    text-decoration: none;
+}
+.latestposts-section .card-main-title{
+    font-size: 15px;
+    font-family: 'Poppins-Bold';
+}
+
+.category-pill.pink{
+    border-color: #F7C8D1;
+    color: #F7C8D1;
+}
+.category-pill.brown{
+    border-color:#BC6C53;
+    color:#BC6C53;
+}
+.category-pill.yellow{
+    border-color:#F8DB3C;
+    color:#F8DB3C;
+}
+.category-pill.green{
+    border-color:#31B982;
+    color:#31B982;
+}
+.category-pill.purple{
+    border-color:#800080;
+    color:#800080;
+}
+.category-pill.red{
+    border-color:#F72727;
+    color:#F72727;
+}
+.category-pill.darkgreen{
+    border-color:#008080;
+    color:#008080;
+}
+
+@media screen and (min-width:1200px) {
+    
+    .latestposts-section .card{
+        max-width: 248px;
+    }
+}
+
+
+
+
+
+
+
+
+/* End Latest Posts */
