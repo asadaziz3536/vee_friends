@@ -43,7 +43,6 @@ p {
 
 .announcement-bar {
     background-color: #3DB649;
-@font-face {
     font-family: "Poppins-Regular";
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
