@@ -43,11 +43,26 @@ p {
 
 .announcement-bar {
     background-color: #3DB649;
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+.header-wrapper .navbar-collapse .custom-btn {
+    border-radius: 21px;
+    background-color: #000;
+    color: white;
+    border: 1px solid transparent;
+    padding: 11px 18px;
+}
+
+.announcement-bar {
+    background-color: #3db649;
     color: #fff;
 }
 
 .custom-nav {
-    border-top: 3px solid #9ACE00;
+    border-top: 3px solid #9ace00;
 }
 
 .custom-nav a {
@@ -179,3 +194,49 @@ p {
 
 
 /* End Latest Posts */
+/* FAQ section */
+
+.faq-main-wrapper {
+    padding: 49px;
+}
+
+.accordion-wrapper .accordion-item {
+    border: none;
+}
+
+.accordion-wrapper .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-wrapper .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    color: #0ad900;
+    background-color: transparent;
+}
+
+.faq-header-font {
+    font-family: "Poppins-Bold";
+    font-size: 24px;
+}
+
+.faq-same-heading {
+    font-family: "Poppins-Regular";
+}
+
+.faq-same-body {
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+
+.faq-main-wrapper {
+    background: transparent url("/assets/images/faq-background.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.accordion-wrapper .accordion-button,
+.accordion-wrapper .accordion-item {
+    background-color: transparent;
+}
+
+
+/* end of FAQ section */
