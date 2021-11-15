@@ -8,6 +8,16 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+#root p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
 .header-wrapper .navbar-collapse .custom-btn {
     border-radius: 21px;
     background-color: #000;
@@ -81,3 +91,64 @@
 
 
 /* end of FAQ section */
+
+
+/* Timeline section */
+
+.timeline-wrapper .timeline-card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-wrapper .timeline-card-content header {
+    display: none;
+}
+
+.timeline-wrapper .timeline-card-content .card-description {
+    display: none;
+}
+
+.timeline-wrapper .timeline-card-content .card-media-wrapper {
+    max-width: 100px;
+}
+
+.timeline-wrapper .timeline-card-content .card-sub-title {
+    padding-left: 0px;
+    font-weight: 400;
+}
+
+.timeline-wrapper .timeline-card-content .css-d0st9p-CardImage {
+    max-width: 118px;
+}
+
+.timeline-wrapper .timeline-card-content .css-8v2xrm-MediaDetailsWrapper {
+    padding-left: 32px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+    .timeline-wrapper Chrono {
+        mode: 'VERTICAL';
+    }
+}
+
+
+/* end of Timeline section */
+
+
+/* Token Section */
+
+.card-wrapper .card {
+    word-wrap: unset;
+}
+
+.card-wrapper p {
+    font-family: "Poppins-Bold";
+    color: #A7A7A7;
+}
+
+.card-wrapper .heading-font {
+    font-family: "Poppins-Bold";
+}
+
+
+/* end of Token Section */

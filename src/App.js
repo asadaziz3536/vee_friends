@@ -1,15 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Header from './components/Header';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Faqs from './components/Faqs';
+import { Fragment } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from './Routes';
 
 function App() {
   return (
-    <div className="">
-    <Header />
-    <Faqs/>
-    </div>
+    <Fragment >
+      <Router >
+        <Routes/>
+      </Router>  
+    </Fragment>
   );
 }
 
