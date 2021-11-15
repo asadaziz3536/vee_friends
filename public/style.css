@@ -51,6 +51,16 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+#root p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
 .header-wrapper .navbar-collapse .custom-btn {
     border-radius: 21px;
     background-color: #000;
@@ -78,6 +88,7 @@ p {
     color: #B704B7;
 }
 
+
 /* Hero Section  */
 
 .hero-section {
@@ -98,7 +109,9 @@ p {
     background-color: #B704B7;
 }
 
+
 /* End Hero Section  */
+
 
 /* Latest Posts */
 
@@ -199,6 +212,10 @@ p {
 }
 
 /* End Latest Posts */
+
+
+/* End Latest Posts */
+
 
 /* FAQ section */
 
@@ -301,3 +318,5 @@ p {
 }
 
 /* End Footer */
+
+/* end of FAQ section */

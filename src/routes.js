@@ -1,27 +1,20 @@
-import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
-import PostDetail from "./screens/PostDetail";
+import React, { Suspense, Fragment } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+
+import Tokens from './components/Tokens'
 
 const Routes = () => {
     return (
-        <div>
+        <Fragment>
             <Router>
-                <Switch>
-                    <Route exact path='' />
-                    <Route exact path='/postdetails' component={PostDetail} />
-                   
-
-
-                </Switch>
-
-
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Switch>
+                        <Route exact path='/' component={Tokens} />
+                    </Switch>
+                </Suspense>
             </Router>
-
-        </div>
+        </Fragment>
     )
 }
 
