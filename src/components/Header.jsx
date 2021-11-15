@@ -8,7 +8,7 @@ const Header = () => {
             <div className="announcement-bar text-center p-2">
                 <p className='mb-0'>Check out our first ever Mini Drop - "Spooky Vees"</p>
             </div>
-            <Navbar bg="white" expand="lg" className='custom-nav'>
+            <Navbar bg="white" expand="lg"  className='custom-nav'>
                 <Container>
                     <Navbar.Brand href="#home"> <img
                         src="assets/icons/logoipsum-logo.svg"

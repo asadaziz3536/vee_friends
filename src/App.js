@@ -1,18 +1,14 @@
 
 import './App.css';
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Fragment } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import Routes from './Routes';
+// import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './screens/Home';
 
 function App() {
   return (
-    <Fragment >
-      <Router >
-        <Routes/>
-      </Router>  
-    </Fragment>
+    <div className="">
+      <Home />
+    </div>
   );
 }
 
