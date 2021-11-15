@@ -42,7 +42,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6} >
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill' >Core</span>
@@ -54,7 +54,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png'  />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill pink' >Bubble Gum</span>
@@ -66,7 +66,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png'  />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill brown' >Rare</span>
@@ -78,7 +78,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png'  />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill yellow' >Gold</span>
@@ -90,7 +90,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png'  />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill green' >Epic</span>
@@ -102,7 +102,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill purple' >Hologram</span>
@@ -114,7 +114,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill yellow' >G.O.O</span>
@@ -126,7 +126,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width:'100%', boxShadow:'0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width:'100%', boxShadow:'0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill red' >Lava</span>
@@ -138,7 +138,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill green' >Epic</span>
@@ -150,7 +150,7 @@ const LatestPosts = () => {
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
                                     <Col md={6}>
-                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/icons/logoipsum-logo.svg' />
+                                        <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
                                     <Col md={6}>
                                         <span className='category-pill darkgreen' >Diamond</span>

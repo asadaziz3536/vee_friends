@@ -15,11 +15,13 @@
 
 h1 {
     font-size: 43px !important;
-    font-family: "Poppins-Bold";
 }
 
 h3 {
     font-size: 12px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins-Bold";
 }
 
@@ -27,7 +29,9 @@ p {
     font-family: "Poppins-Regular";
     font-size: 11px;
 }
-
+.custom-nav{
+    box-shadow: 0px 3px 6px #00000029;
+}
 .custom-btn {
     border-radius: 22px !important;
     border: 1px solid transparent !important;
@@ -103,7 +107,6 @@ p {
     padding-bottom: 70px;
 }
 
-
 .latestposts-section .top-title-pill {
     background: #fff;
     color: #000;
@@ -114,7 +117,7 @@ p {
     font-family: 'Poppins-Bold';
 }
 
-.category-pill{
+.category-pill {
     border: 1px solid #DCDCDC;
     border-radius: 10px;
     font-family: 'Poppins-Bold';
@@ -123,76 +126,80 @@ p {
     font-size: 11px;
 }
 
-.floor-prices{
+.floor-prices {
     padding-top: 43px;
 }
-.floor-prices .value{
+
+.floor-prices .value {
     color: #989696;
     font-family: 'Poppins-Medium';
     font-size: 11px;
 }
-.latestposts-section .custom-card{
+
+.latestposts-section .custom-card {
     margin-bottom: 49px;
 }
-.latestposts-section .card-title{
+
+.latestposts-section .card-title {
     font-size: 13px;
     font-family: 'Poppins-Bold';
 }
-.latestposts-section .card-link{
+
+.latestposts-section .card-link {
     color: #000;
     font-size: 10px;
     font-family: 'Poppins-Bold';
     text-decoration: none;
 }
-.latestposts-section .card-main-title{
+
+.latestposts-section .card-main-title {
     font-size: 15px;
     font-family: 'Poppins-Bold';
 }
 
-.category-pill.pink{
+.category-pill.pink {
     border-color: #F7C8D1;
     color: #F7C8D1;
 }
-.category-pill.brown{
-    border-color:#BC6C53;
-    color:#BC6C53;
+
+.category-pill.brown {
+    border-color: #BC6C53;
+    color: #BC6C53;
 }
-.category-pill.yellow{
-    border-color:#F8DB3C;
-    color:#F8DB3C;
+
+.category-pill.yellow {
+    border-color: #F8DB3C;
+    color: #F8DB3C;
 }
-.category-pill.green{
-    border-color:#31B982;
-    color:#31B982;
+
+.category-pill.green {
+    border-color: #31B982;
+    color: #31B982;
 }
-.category-pill.purple{
-    border-color:#800080;
-    color:#800080;
+
+.category-pill.purple {
+    border-color: #800080;
+    color: #800080;
 }
-.category-pill.red{
-    border-color:#F72727;
-    color:#F72727;
+
+.category-pill.red {
+    border-color: #F72727;
+    color: #F72727;
 }
-.category-pill.darkgreen{
-    border-color:#008080;
-    color:#008080;
+
+.category-pill.darkgreen {
+    border-color: #008080;
+    color: #008080;
 }
 
 @media screen and (min-width:1200px) {
-    
-    .latestposts-section .card{
+    .latestposts-section .card {
         max-width: 248px;
     }
 }
 
-
-
-
-
-
-
-
 /* End Latest Posts */
+
 /* FAQ section */
 
 .faq-main-wrapper {
@@ -232,10 +239,65 @@ p {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button,
-.accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
-
 /* end of FAQ section */
+
+/* Footer */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0px 20px 0px;
+}
+
+.footer h5 {
+    font-size: 23px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'poppins-regular';
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer .input-wrapper {
+    position: relative;
+    max-width: 387px;
+}
+
+.footer .input-wrapper input {
+    border-radius: 30px;
+    padding: 7px;
+}
+.footer .input-wrapper input::placeholder{
+    font-family: 'poppins-regular';
+}
+
+.footer .input-wrapper .btn {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    background-color: #0AD900;
+    box-shadow: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.footer .container-fluid .row{
+    max-width: 1140px;
+    margin: auto;
+}
+.footer button{
+    font-family: 'Poppins-Bold';
+    font-size: 13px;
+}
+
+/* End Footer */
