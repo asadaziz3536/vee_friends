@@ -12,7 +12,7 @@ const Footer = () => {
                         <h5>
                             See you at VeeCon
                         </h5>
-                        <p>Subscribe and stay up to date on the newest updates.</p>
+                        <p className='pb-2'>Subscribe and stay up to date on the newest updates.</p>
                         <form action="">
                             <div className="input-wrapper">
                                 <input type="email" className='form-control' placeholder='E-mail' />

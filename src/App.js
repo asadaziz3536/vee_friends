@@ -2,16 +2,29 @@
 import './App.css';
 // import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './screens/Home';
-import Footer from './components/Footer';
-import Header from './components/Header'
+import Routes from '../src/routes'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { useEffect } from 'react'
+
 
 function App() {
+  function scriptLoaded() {
+    // window.A.sort();
+  }
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "/assets/js/main.js";
+    script.async = true;
+    document.body.appendChild(script);
+    script.onload = () => scriptLoaded();
+
+  }, [])
+
   return (
     <div className="">
-      <Header />
-      <Home />
-      <Footer />
+      <Router>
+        <Routes />
+      </Router>
     </div>
   );
 }

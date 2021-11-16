@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, Row, Col, Container, Image } from 'react-bootstrap'
-import Header from './Header'
 
 const Tokens = () => {
 
@@ -113,7 +112,6 @@ const Tokens = () => {
     ]
     return (
         <>
-            <Header />
             <Container>
                 <Row xs={1} md={4} className="g-4 card-wrapper">
                     {tokenArray.map((obj, ind) => (
