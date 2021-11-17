@@ -17,45 +17,137 @@ const Hero = () => {
 
                     <Col md={6}>
                         <Row>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col className='col-auto p-0'>
-                                <img src="assets/images/card.png" alt="" />
+                            <Col className='p-0'>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="assets/images/card.png" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
+
+
+
+
+
+
 
                         </Row>
+
                     </Col>
-
                 </Row>
-
-
-
-
             </Container>
 
         </div>

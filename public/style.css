@@ -144,6 +144,76 @@ h6 {
     backdrop-filter: blur(30px);
 }
 
+.hero-section .flip-card {
+    background-color: transparent;
+    width: 130px;
+    height: 180px;
+    perspective: 1000px;
+}
+
+.hero-section .flip-card-inner {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.hero-section .flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hero-section .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.hero-section .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #9ACE00;
+    border-radius: 8px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ACE00;
+}
+
 @media screen and (min-width:768px) and (max-width:1024px) {
     .hero-section img {
         width: 75px;
@@ -273,8 +343,14 @@ h6 {
 }
 
 @media screen and (max-width:575.98px) {
+    .latestposts-section .top-title-pill:first-child {
+        margin-top: 6px;
+    }
+    .latestposts-section .top-title-pill:last-child {
+        margin-top: 30px;
+    }
     .latestposts-section .top-title-pill {
-        margin-top: 20px;
+        padding: 12px 40px;
     }
 }
 
@@ -295,6 +371,10 @@ h6 {
     border: none;
 }
 
+.accordion-wrapper .accordion-button {
+    padding: 1rem 0px;
+}
+
 .accordion-wrapper .accordion-button:focus {
     box-shadow: none;
 }
@@ -303,6 +383,10 @@ h6 {
     box-shadow: none;
     color: #0ad900;
     background-color: transparent;
+}
+
+.accordion-wrapper .accordion-body {
+    padding: 1rem 0px;
 }
 
 .faq-header-font {
@@ -327,6 +411,20 @@ h6 {
 .accordion-wrapper .accordion-button,
 .accordion-wrapper .accordion-item {
     background-color: transparent;
+}
+
+@media screen and (max-width:767.98px) {
+    .faq-main-wrapper {
+        padding: 40px 0px;
+    }
+    .accordion-wrapper .accordion-button {
+        padding: 0.6rem 0px;
+        font-size: 14px;
+    }
+    .accordion-wrapper .accordion-body {
+        padding: 0.6rem 0px;
+        font-size: 14px;
+    }
 }
 
 
@@ -494,6 +592,21 @@ h6 {
     .table-container {
         margin: 20px;
     }
+    .table-container ::-webkit-scrollbar {
+        width: 10px !important;
+    }
+    /* Track */
+    .table-container ::-webkit-scrollbar-track {
+        background: #f1f1f1 !important;
+    }
+    /* Handle */
+    .table-container ::-webkit-scrollbar-thumb {
+        background: #888 !important;
+    }
+    /* Handle on hover */
+    .table-container ::-webkit-scrollbar-thumb:hover {
+        background: #555 !important;
+    }
     .recent-activity .link {
         margin: 20px !important;
     }
@@ -521,6 +634,12 @@ h6 {
     flex-direction: column;
     vertical-align: middle;
     justify-content: center;
+}
+
+@media screen and (max-width:767.98px) {
+    .collection-detail video {
+        width: 100%;
+    }
 }
 
 
@@ -614,6 +733,19 @@ h6 {
     font-family: 'Poppins-Bold';
     font-size: 13px;
 }
+
+.footer a img {
+    width: 50px;
+}
+
+@media screen {
+    .footer h5 {
+        font-size: 16px;
+    }
+}
+
+
+/* End Footer */
 
 
 /* end of FAQ section */
