@@ -898,4 +898,34 @@ h6 {
 /* end of Token Section */
 
 
+/* slider section */
+
+.slider-main-container {
+    margin: 0rem 1rem;
+}
+
+.carousal-container {
+    margin: 20px;
+}
+
+.react-multi-carousel-item {
+    margin-right: 2px;
+}
+
+.card-wrapper .card-footer:last-child {
+    background-color: black;
+    width: 100%;
+    border: 1px solid grey;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.card-wrapper .card-footer p {
+    color: white !important;
+}
+
+
+/* end of slider section */
+
+
 /* End Footer */

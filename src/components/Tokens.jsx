@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
-import Header from './Header'
 
 const Tokens = () => {
 
@@ -117,21 +116,17 @@ const Tokens = () => {
         <>
             <div className=''>
 
-                {/* <div className='screen-header'>
-                    <hr className='screen-header-line'/>
-                    <Button className='screen-header-btn rounded-pill'>Library</Button>
-                </div> */}
-<div class="main-title-wrapper"><h2>Recent Activity</h2></div>
+                <div class="main-title-wrapper"><h2>Recent Activity</h2></div>
                 <Container>
 
                     <Col className='card-header-container'>
                         <Row className='card-quantity'>13 Tokens</Row>
-                        <hr className='card-header-line'/>
+                        <hr className='card-header-line' />
                         <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
                             {navArray.map((obj, ind) => {
                                 return (
-                                    <div key={ind} style={{width: "fit-content"}}>
-                                        <Col className='alphabet-link' style={{width: "fit-content"}}>{obj}</Col>
+                                    <div key={ind} style={{ width: "fit-content" }}>
+                                        <Col className='alphabet-link' style={{ width: "fit-content" }}>{obj}</Col>
                                     </div>
                                 )
                             })}
@@ -173,11 +168,11 @@ const Tokens = () => {
 
                     <br />
                     <Col>
-                    <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
+                        <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
                             {navArray.map((obj, ind) => {
                                 return (
-                                    <div key={ind} style={{width: "fit-content"}}>
-                                        <Col className='alphabet-link' style={{width: "fit-content"}}>{obj}</Col>
+                                    <div key={ind} style={{ width: "fit-content" }}>
+                                        <Col className='alphabet-link' style={{ width: "fit-content" }}>{obj}</Col>
                                     </div>
                                 )
                             })}
