@@ -24,8 +24,8 @@ const CollectionDetails = () => {
                     <Col sm={12} md={6}>
                         <div className="content-wrapper">
                             <div className="content">
-                                <h2 className='pt-3 pt-sm-4 pt-md-0'>The Original Art</h2>
-                                <h3>The birth of Responsive Ram!</h3>
+                                <h2 className='pt-3 pt-sm-4 pt-md-0' style={{fontSize:'24px'}}>The Original Art</h2>
+                                <h3 style={{fontSize:'16px'}}>The birth of Responsive Ram!</h3>
                                 <p>Each collectible was orginially hand drawn by GrayVee,
                                     The main ambitions of this project is to create meangiful
                                     intellectual property and create an extraordinary community.

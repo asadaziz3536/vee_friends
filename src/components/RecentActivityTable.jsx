@@ -41,8 +41,6 @@ const RecentActivityTable = () => {
                                     </Col>
                                     <Col><span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} >5 months ago</span></Col>
                                 </div>
-
-
                             </div>
                         </div>
                     </Row>

@@ -18,7 +18,16 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-h1, h2, h3, h4, h5, h6 {
+a{
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins-Bold";
 }
 
@@ -27,12 +36,21 @@ p {
     font-size: 11px;
 }
 
+ /* Header */
 .custom-nav {
     box-shadow: 0px 3px 6px #00000029;
 }
 
 .custom-nav .navbar-nav .nav-link {
     color: #000 !important;
+}
+.custom-nav .navbar-nav .nav-link a{
+    text-decoration: none;
+}
+
+.custom-nav .navbar-nav .nav-link a:hover{
+    color: #9ace00;
+    text-shadow: 0px 0px 3px 10px #9ace00 ;
 }
 
 .custom-btn {
@@ -54,7 +72,13 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-#root p, h1, h2, h3, h4, h5, h6 {
+#root p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
 }
 
@@ -84,6 +108,9 @@ p {
 .theme-accent {
     color: #b704b7;
 }
+
+/* End Header  */
+
 
 /* Hero Section  */
 
@@ -119,6 +146,7 @@ p {
     margin-top: 24px;
 }
 
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 
 .sticky {
@@ -152,7 +180,8 @@ p {
     transform: rotateY(180deg);
 }
 
-.hero-section .flip-card-front, .flip-card-back {
+.hero-section .flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -171,17 +200,20 @@ p {
     transform: rotateY(180deg);
 }
 
+
 /* width */
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 
+
 /* Track */
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 
 /* Handle */
 
@@ -190,15 +222,28 @@ p {
     border-radius: 8px;
 }
 
+
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
     background: #9ACE00;
 }
 
+
+
 @media screen and (min-width:768px) and (max-width:1024px) {
     .hero-section img {
         width: 75px;
+    }
+    .hero-section .flip-card {
+        width: 70px;
+        height: 100px
+    }
+}
+@media screen and (min-width:840px) and (max-width:1024px) {
+    
+    .hero-section .flip-card {
+        width: 86px;
     }
 }
 
@@ -208,7 +253,9 @@ p {
     }
 }
 
+
 /* End Hero Section  */
+
 
 /* Latest Posts */
 
@@ -219,6 +266,7 @@ p {
 
 .latestposts-section h3 {
     font-size: 14px;
+    color: #000;
 }
 
 .latestposts-section .top-title-pill {
@@ -334,9 +382,12 @@ p {
     }
 }
 
-/* End Latest Posts */
 
 /* End Latest Posts */
+
+
+/* End Latest Posts */
+
 
 /* FAQ section */
 
@@ -385,7 +436,8 @@ p {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button,
+.accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
@@ -403,7 +455,9 @@ p {
     }
 }
 
+
 /* end of FAQ section */
+
 
 /* Post Detail feature  */
 
@@ -472,7 +526,9 @@ p {
     }
 }
 
+
 /* End Post Detail Feature */
+
 
 /* Recent Activity */
 
@@ -498,7 +554,8 @@ p {
     text-align: center;
 }
 
-.main-title-wrapper:before, .main-title-wrapper:after {
+.main-title-wrapper:before,
+.main-title-wrapper:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
@@ -564,19 +621,23 @@ p {
         margin: 20px;
     }
     .table-container ::-webkit-scrollbar {
-        width: 10px !important;
+        width: 40px !important;
+        border-radius: 12px !important;
     }
     /* Track */
     .table-container ::-webkit-scrollbar-track {
         background: #f1f1f1 !important;
+        border-radius: 12px !important;
     }
     /* Handle */
     .table-container ::-webkit-scrollbar-thumb {
         background: #888 !important;
+        border-radius: 12px !important;
     }
     /* Handle on hover */
     .table-container ::-webkit-scrollbar-thumb:hover {
         background: #555 !important;
+        border-radius: 12px !important;
     }
     .recent-activity .link {
         margin: 20px !important;
@@ -592,7 +653,9 @@ p {
     }
 }
 
+
 /* End Recent Activity */
+
 
 /* Collection Detail */
 
@@ -611,11 +674,15 @@ p {
     }
 }
 
+
 /* End Collection Detail */
+
 
 /* Post Detail Page */
 
+
 /* Garrys Collection Page */
+
 
 /* Collections Feature */
 
@@ -635,9 +702,12 @@ p {
     font-family: 'Poppins-Semibold';
 }
 
+
 /* End Collections Feature */
 
+
 /* Garrys Collection Page */
+
 
 /* Footer */
 
@@ -706,7 +776,9 @@ p {
     }
 }
 
+
 /* End Footer */
+
 
 /* end of FAQ section */
 
@@ -857,5 +929,5 @@ p {
 
 /* end of Token Section */
 
-/* End Footer */
 
+/* End Footer */

@@ -9,10 +9,10 @@ const CollectionsFeature = () => {
             <div className='postdetail-feature collections-feature-wrap'>
                 <Container>
                     <Row>
-                        <Col sm={12} md={6} className='text-center'>
+                        <Col sm={12} md={12} lg={6} className='text-center'>
                             <img src="assets/images/card.png" alt="" />
                         </Col>
-                        <Col sm={12} md={6}>
+                        <Col sm={12} md={12} lg={6}>
                             <div className="edition">
                                 <span>#04293</span>  <span>2 OF 8</span>
                             </div>
@@ -28,7 +28,7 @@ const CollectionsFeature = () => {
                             <div className="details">
                                 <p>This token is verified for admission to VeeCon 2022, 2023, 2024 This token is a collectible that lives on the Ethereum blockchain</p>
                             </div>
-                            <Row >
+                            <Row className='mx-1'>
                                 <Col>
                                     <Row className='text-center stats-pannel' style={{ border: '1px solid #CECBCB', borderRadius: '6px' }}>
                                         <Col>
