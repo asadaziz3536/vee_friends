@@ -1,13 +1,13 @@
 import CollectionsFeature from "../components/CollectionsFeature"
-import PostDetailFeature from "../components/PostDetailFeature"
-import Tokens from "../components/Tokens"
+import GarrysCollectionTokens from "../components/GarrysCollectionTokens"
 
 const GarrysCollectionPage = () => {
     return (
-        <div>
+        <>
             <CollectionsFeature />
-            <Tokens />
-        </div>
+            <GarrysCollectionTokens />
+          
+        </>
     )
 }
 

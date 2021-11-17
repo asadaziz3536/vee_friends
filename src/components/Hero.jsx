@@ -15,7 +15,7 @@ const Hero = () => {
                         </div>
                     </Col>
 
-                    <Col md={6}>
+                    <Col className='d-none d-sm-none d-md-block' md={6}>
                         <Row>
                             <Col className='p-0'>
                                 <div class="flip-card">

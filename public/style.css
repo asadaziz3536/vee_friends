@@ -18,6 +18,10 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+a{
+    text-decoration: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -32,12 +36,21 @@ p {
     font-size: 11px;
 }
 
+ /* Header */
 .custom-nav {
     box-shadow: 0px 3px 6px #00000029;
 }
 
 .custom-nav .navbar-nav .nav-link {
     color: #000 !important;
+}
+.custom-nav .navbar-nav .nav-link a{
+    text-decoration: none;
+}
+
+.custom-nav .navbar-nav .nav-link a:hover{
+    color: #9ace00;
+    text-shadow: 0px 0px 3px 10px #9ace00 ;
 }
 
 .custom-btn {
@@ -95,6 +108,8 @@ h6 {
 .theme-accent {
     color: #b704b7;
 }
+
+/* End Header  */
 
 
 /* Hero Section  */
@@ -189,7 +204,7 @@ h6 {
 /* width */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 
@@ -214,9 +229,21 @@ h6 {
     background: #9ACE00;
 }
 
+
+
 @media screen and (min-width:768px) and (max-width:1024px) {
     .hero-section img {
         width: 75px;
+    }
+    .hero-section .flip-card {
+        width: 70px;
+        height: 100px
+    }
+}
+@media screen and (min-width:840px) and (max-width:1024px) {
+    
+    .hero-section .flip-card {
+        width: 86px;
     }
 }
 
@@ -239,6 +266,7 @@ h6 {
 
 .latestposts-section h3 {
     font-size: 14px;
+    color: #000;
 }
 
 .latestposts-section .top-title-pill {
@@ -593,19 +621,23 @@ h6 {
         margin: 20px;
     }
     .table-container ::-webkit-scrollbar {
-        width: 10px !important;
+        width: 40px !important;
+        border-radius: 12px !important;
     }
     /* Track */
     .table-container ::-webkit-scrollbar-track {
         background: #f1f1f1 !important;
+        border-radius: 12px !important;
     }
     /* Handle */
     .table-container ::-webkit-scrollbar-thumb {
         background: #888 !important;
+        border-radius: 12px !important;
     }
     /* Handle on hover */
     .table-container ::-webkit-scrollbar-thumb:hover {
         background: #555 !important;
+        border-radius: 12px !important;
     }
     .recent-activity .link {
         margin: 20px !important;

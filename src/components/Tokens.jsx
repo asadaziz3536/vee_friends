@@ -116,9 +116,8 @@ const Tokens = () => {
         <>
             <div className=''>
 
-                <div class="main-title-wrapper"><h2>Recent Activity</h2></div>
+                <div class="main-title-wrapper"><h2>Library</h2></div>
                 <Container>
-
                     <Col className='card-header-container'>
                         <Row className='card-quantity'>13 Tokens</Row>
                         <hr className='card-header-line' />
@@ -152,7 +151,7 @@ const Tokens = () => {
                                         <Card.Title className='heading-font' style={{ fontSize: '14px' }}>{obj.title}</Card.Title>
                                         <Row style={{ alignItems: 'center' }}>
                                             <Col className='col-3'>
-                                                <h3 className='heading-font'>{obj.value}</h3>
+                                                <h3 className='heading-font mb-0'>{obj.value}</h3>
                                             </Col>
 
                                             <Col className='col-9 ps-0'>
@@ -165,9 +164,8 @@ const Tokens = () => {
                             </Col>
                         ))}
                     </Row>
-
                     <br />
-                    <Col>
+                    <Col className='my-4'>
                         <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
                             {navArray.map((obj, ind) => {
                                 return (

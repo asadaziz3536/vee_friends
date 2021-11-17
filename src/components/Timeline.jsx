@@ -1,30 +1,24 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import { Chrono } from "react-chrono";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 const Timeline = () => {
 
     const [width, setwidth] = useState(window.innerWidth)
 
     const [isTimeline, setIsTimeline] = useState('VERTICAL_ALTERNATING')
-    // const mediaQuery = window.matchMedia('(min-width: 767px)')
-    // if (mediaQuery.matches) {
-    //     return isTimeline
-    // }else{
-    //     setIsTimeline('VERTICAL')
-    // }
 
-    window.onresize = ()=> setwidth(window.innerWidth)
+    window.onresize = () => setwidth(window.innerWidth)
 
     useEffect(() => {
-        if (width<'767') {
+        if (width < '767') {
             setIsTimeline('VERTICAL')
         }
-        else if(width>'768'){
+        else if (width > '768') {
             setIsTimeline('VERTICAL_ALTERNATING')
         }
-        else if(width<'552'){
+        else if (width < '552') {
             setIsTimeline('HORIZONTAL')
         }
     }, [width])
@@ -60,28 +54,30 @@ const Timeline = () => {
 
         <div>
             <div class="main-title-wrapper"><h2>Timeline</h2></div>
-        <Container>
-            <div style={{ width: "100%", height: "100%" }} className='timeline-wrapper'>
-                <Chrono items={items}
-                    mode={isTimeline}
-                    className='chrono-main-wrapper'
-                    theme={{
-                        primary: "black",
-                        secondary: "#0AD900",
-                        cardBgColor: "white",
-                        cardForeColor: "black",
-                        titleColor: "black",
-                    }}
-                    hideControls={true}
-                    cardHeight={200}
-                    cardWidth={300}
-                    slideShow
-                    slideItemDuration={1000}
-                    scrollable={{ scrollbar: true }}
+            <Container>
+                <div style={{ width: "100%", height: "100%" }} className='timeline-wrapper'>
+                    <Chrono items={items}
+                        mode={isTimeline}
+                        className='chrono-main-wrapper'
+                        theme={{
+                            primary: "black",
+                            secondary: "#0AD900",
+                            cardBgColor: "white",
+                            cardForeColor: "black",
+                            titleColor: "black",
+                        }}
+                        hideControls={true}
+                        cardHeight={200}
+                        cardWidth={300}
+                        slideShow
+                        slideItemDuration={1000}
+                        scrollable={{ scrollbar: true }}
 
-                />
-            </div>
-        </Container>
+
+                    />
+
+                </div>
+            </Container>
         </div>
     )
 }
