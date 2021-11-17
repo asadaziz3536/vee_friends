@@ -3,8 +3,9 @@ import './App.css';
 // import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Routes from './Routes'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { useEffect } from 'react'
+import { BrowserRouter as Router,  } from 'react-router-dom'
+import { Fragment, useEffect } from 'react'
+
 
 
 function App() {
