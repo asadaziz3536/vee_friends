@@ -3,6 +3,7 @@ import Faqs from '../components/Faqs'
 import Hero from '../components/Hero'
 import Timeline from '../components/Timeline'
 import LatestPosts from '../components/LatestPosts'
+import Slider from '../components/Slider'
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
            
             <Hero />
             <LatestPosts />
+            <Slider/>
             <Timeline />
             <Faqs />
             

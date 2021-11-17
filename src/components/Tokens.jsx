@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
-import Header from './Header'
 
 const Tokens = () => {
 

@@ -6,6 +6,7 @@ import Tokens from './components/Tokens'
 import GarrysCollectionPage from './screens/GarrysCollectionPage'
 import Home from './screens/Home'
 import PostDetailPage from './screens/PostDetailPage'
+import Slider from './components/Slider'
 
 const Routes = () => {
     return (
@@ -17,6 +18,7 @@ const Routes = () => {
                     <Route  path='/postdetail' component={PostDetailPage} />
                     <Route  path='/library' component={Tokens} />
                     <Route  path='/garryscollection' component={GarrysCollectionPage} />
+                    <Route path='/slider' component={Slider}/>
                 </Switch>
                 <Footer />
             </Router>

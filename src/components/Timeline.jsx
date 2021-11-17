@@ -27,7 +27,7 @@ const Timeline = () => {
 
     const line = 'VERTICAL_ALTERNATING'
     const items = [{
-        title: "May 1940",
+        title: 'May 1995',
         cardTitle: "Keynote Koala",
         cardSubtitle: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space,",
         media: {
@@ -49,6 +49,7 @@ const Timeline = () => {
     }
     ];
 
+    // console.log(items.title.date)
     return (
 
         <div>
