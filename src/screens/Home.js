@@ -8,7 +8,7 @@ import Slider from '../components/Slider'
 const Home = () => {
     return (
         <div className='Homepage-wrapper'>
-           
+
             <Hero />
             <LatestPosts />
             <Slider/>
