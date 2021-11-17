@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './screens/Home'
 import Tokens from './components/Tokens'
+import Timeline from './components/Timeline'
+
 
 const routes = () => {
     return (
@@ -10,7 +12,7 @@ const routes = () => {
             <Router>
                 <Suspense fallback={<div>Loading...</div>}>
                     <Switch>
-                        <Route exact path='/' component={Tokens} />
+                        <Route exact path='/' component={Timeline} />
                     </Switch>
                 </Suspense>
             </Router>

@@ -13,13 +13,18 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
 h1 {
     font-size: 43px !important;
     font-family: "Poppins-Bold";
 }
 
 h3 {
-    font-size: 12px !important;
+    font-size: 12px;
     font-family: "Poppins-Bold";
 }
 
@@ -42,7 +47,7 @@ p {
 }
 
 .announcement-bar {
-    background-color: #3DB649;
+    background-color: #3db649;
     font-family: "Poppins-Regular";
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
@@ -55,6 +60,7 @@ h4,
 h5,
 h6 {
     margin: 0px;
+    margin-bottom: 0px !important;
 }
 
 .header-wrapper .navbar-collapse .custom-btn {
@@ -81,7 +87,7 @@ h6 {
 }
 
 .theme-accent {
-    color: #B704B7;
+    color: #b704b7;
 }
 
 
@@ -94,15 +100,15 @@ h6 {
 }
 
 .hero-section p {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .hero-section h1 {
-    color: #FF7F00;
+    color: #ff7f00;
 }
 
 .hero-section .custom-btn {
-    background-color: #B704B7;
+    background-color: #b704b7;
 }
 
 
@@ -123,14 +129,14 @@ h6 {
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
     padding: 20px 40px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .category-pill {
-    border: 1px solid #DCDCDC;
+    border: 1px solid #dcdcdc;
     border-radius: 10px;
-    font-family: 'Poppins-Bold';
-    color: #DCDCDC;
+    font-family: "Poppins-Bold";
+    color: #dcdcdc;
     padding: 2px 6px;
     font-size: 11px;
 }
@@ -141,7 +147,7 @@ h6 {
 
 .floor-prices .value {
     color: #989696;
-    font-family: 'Poppins-Medium';
+    font-family: "Poppins-Medium";
     font-size: 11px;
 }
 
@@ -151,39 +157,39 @@ h6 {
 
 .latestposts-section .card-title {
     font-size: 13px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .latestposts-section .card-link {
     color: #000;
     font-size: 10px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     text-decoration: none;
 }
 
 .latestposts-section .card-main-title {
     font-size: 15px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .category-pill.pink {
-    border-color: #F7C8D1;
-    color: #F7C8D1;
+    border-color: #f7c8d1;
+    color: #f7c8d1;
 }
 
 .category-pill.brown {
-    border-color: #BC6C53;
-    color: #BC6C53;
+    border-color: #bc6c53;
+    color: #bc6c53;
 }
 
 .category-pill.yellow {
-    border-color: #F8DB3C;
-    color: #F8DB3C;
+    border-color: #f8db3c;
+    color: #f8db3c;
 }
 
 .category-pill.green {
-    border-color: #31B982;
-    color: #31B982;
+    border-color: #31b982;
+    color: #31b982;
 }
 
 .category-pill.purple {
@@ -192,8 +198,8 @@ h6 {
 }
 
 .category-pill.red {
-    border-color: #F72727;
-    color: #F72727;
+    border-color: #f72727;
+    color: #f72727;
 }
 
 .category-pill.darkgreen {
@@ -201,7 +207,7 @@ h6 {
     color: #008080;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .latestposts-section .card {
         max-width: 248px;
     }
@@ -257,3 +263,150 @@ h6 {
 
 
 /* end of FAQ section */
+
+
+/* Timeline section */
+
+.timeline-wrapper .timeline-card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-wrapper .timeline-card-content header {
+    display: none;
+}
+
+.timeline-wrapper .timeline-card-content .card-description {
+    display: none;
+}
+
+.timeline-wrapper .timeline-card-content .card-media-wrapper {
+    max-width: 100px;
+}
+
+.timeline-wrapper .timeline-card-content .card-sub-title {
+    padding-left: 0px;
+    font-weight: 400;
+}
+
+.timeline-wrapper .css-u0xttt-TimelineContentSubTitle {
+    font-size: 0.80rem;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 440px) {
+    .css-d0st9p-CardImage {
+        max-width: 93px !important;
+    }
+    .css-m1ajd4-TimelineCardTitle {
+        font-size: 0.80rem !important;
+    }
+    .css-8v2xrm-MediaDetailsWrapper {
+        padding-left: 8px !important;
+    }
+    .css-u0xttt-TimelineContentSubTitle {
+        font-size: 0.75rem !important;
+        line-height: 18px !important;
+    }
+    .timeline-wrapper .timeline-card-content .card-media-wrapper {
+        padding-left: 0.5rem !important;
+        min-height: 160px !important;
+    }
+    .css-1relorn-TimelineItemContentWrapper {
+        min-height: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {}
+
+.timeline-wrapper .timeline-card-content .css-d0st9p-CardImage {
+    max-width: 118px;
+}
+
+.timeline-wrapper .timeline-card-content .css-8v2xrm-MediaDetailsWrapper {
+    padding-left: 32px;
+}
+
+.timeline-wrapper .css-p3xmy4-VerticalCircleWrapper::after {
+    background: #C3C3C3;
+}
+
+.timeline-wrapper .css-1ilps6c-Circle {
+    border: 2px solid #a7a7a7;
+    height: 25px;
+    width: 25px;
+}
+
+.timeline-wrapper .css-1ilps6c-Circle:not(.using-icon) {
+    background: white;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+    .timeline-wrapper Chrono {
+        mode: "VERTICAL";
+    }
+}
+
+
+/* end of Timeline section */
+
+
+/* Token Section */
+
+.card-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-wrapper .card {
+    word-wrap: unset;
+}
+
+.card-wrapper p {
+    font-family: "Poppins-Bold";
+    color: #a7a7a7;
+}
+
+.card-wrapper .heading-font {
+    font-family: "Poppins-Bold";
+    font-size: 18px;
+}
+
+.card-header-container .card-header-line {
+    border: 1px solid #707070;
+    margin-top: 0.2rem;
+}
+
+.card-header-container .card-quantity {
+    margin-left: 0px;
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+}
+
+.alphabet-link {
+    font-family: "Poppins-SemiBold";
+    font-size: 12px;
+}
+
+.screen-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.screen-header-line {
+    border: 1px solid #707070;
+    z-index: 0;
+}
+
+.screen-header .screen-header-btn {
+    position: absolute;
+    width: 18.038rem;
+    height: 2.424rem;
+    border: 2px solid #a7a7a7;
+    left: 33rem;
+    top: 0px;
+}
+
+
+/* end of Token Section */

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import { Chrono } from "react-chrono";
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const Timeline = () => {
+
+    const [width, setwidth] = useState(window.innerWidth)
 
     const [isTimeline, setIsTimeline] = useState('VERTICAL_ALTERNATING')
     // const mediaQuery = window.matchMedia('(min-width: 767px)')
@@ -12,6 +14,21 @@ const Timeline = () => {
     // }else{
     //     setIsTimeline('VERTICAL')
     // }
+
+    window.onresize = ()=> setwidth(window.innerWidth)
+
+    useEffect(() => {
+        if (width<'767') {
+            setIsTimeline('VERTICAL')
+        }
+        else if(width>'768'){
+            setIsTimeline('VERTICAL_ALTERNATING')
+        }
+        else if(width<'552'){
+            setIsTimeline('HORIZONTAL')
+        }
+    }, [width])
+
 
 
     const line = 'VERTICAL_ALTERNATING'
