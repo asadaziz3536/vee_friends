@@ -115,14 +115,13 @@ const Tokens = () => {
     const navArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     return (
         <>
-            <Header />
             <div className=''>
 
-                <div className='screen-header'>
+                {/* <div className='screen-header'>
                     <hr className='screen-header-line'/>
                     <Button className='screen-header-btn rounded-pill'>Library</Button>
-                </div>
-
+                </div> */}
+<div class="main-title-wrapper"><h2>Recent Activity</h2></div>
                 <Container>
 
                     <Col className='card-header-container'>

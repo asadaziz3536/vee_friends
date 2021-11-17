@@ -18,22 +18,12 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-<<<<<<< HEAD
-@font-face {
-    font-family: "Poppins-SemiBold";
-    src: url(assets/fonts/Poppins-SemiBold.ttf);
-}
-
-h1 {
-    font-size: 43px !important;
-    font-family: "Poppins-Bold";
-}
-
-h3 {
-    font-size: 12px;
-=======
-h1, h2, h3, h4, h5, h6 {
->>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins-Bold";
 }
 
@@ -69,9 +59,14 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-#root p, h1, h2, h3, h4, h5, h6 {
+#root p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
-    margin-bottom: 0px !important;
 }
 
 .header-wrapper .navbar-collapse .custom-btn {
@@ -101,6 +96,7 @@ p {
     color: #b704b7;
 }
 
+
 /* Hero Section  */
 
 .hero-section {
@@ -114,12 +110,8 @@ p {
 }
 
 .hero-section h1 {
-<<<<<<< HEAD
-    color: #ff7f00;
-=======
     color: #FF7F00;
     font-size: 43px;
->>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
 }
 
 .hero-section .custom-btn {
@@ -138,6 +130,7 @@ p {
 .hero-section .hero-content .btn {
     margin-top: 24px;
 }
+
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 
@@ -163,7 +156,9 @@ p {
     }
 }
 
+
 /* End Hero Section  */
+
 
 /* Latest Posts */
 
@@ -231,13 +226,9 @@ p {
 
 .latestposts-section .card-main-title {
     font-size: 15px;
-<<<<<<< HEAD
-    font-family: "Poppins-Bold";
-=======
     font-family: 'Poppins-Bold';
     display: flex;
     align-items: stretch;
->>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
 }
 
 .category-pill.pink {
@@ -287,9 +278,12 @@ p {
     }
 }
 
-/* End Latest Posts */
 
 /* End Latest Posts */
+
+
+/* End Latest Posts */
+
 
 /* FAQ section */
 
@@ -330,11 +324,14 @@ p {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button,
+.accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
+
 /* end of FAQ section */
+
 
 /* Post Detail feature  */
 
@@ -403,7 +400,9 @@ p {
     }
 }
 
+
 /* End Post Detail Feature */
+
 
 /* Recent Activity */
 
@@ -429,7 +428,8 @@ p {
     text-align: center;
 }
 
-.main-title-wrapper:before, .main-title-wrapper:after {
+.main-title-wrapper:before,
+.main-title-wrapper:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
@@ -508,7 +508,9 @@ p {
     }
 }
 
+
 /* End Recent Activity */
+
 
 /* Collection Detail */
 
@@ -521,30 +523,40 @@ p {
     justify-content: center;
 }
 
+
 /* End Collection Detail */
+
 
 /* Post Detail Page */
 
 
-
 /* Garrys Collection Page */
 
+
 /* Collections Feature */
-.collections-feature-wrap .stats-pannel{
+
+.collections-feature-wrap .stats-pannel {
     margin-top: 30px;
 }
-.collections-feature-wrap .stats-pannel .col{
+
+.collections-feature-wrap .stats-pannel .col {
     padding: 12px;
 }
+
 .collections-feature-wrap .col:not(:last-child) {
     border-right: 1px solid #ccc;
 }
-.collections-feature-wrap .total{
+
+.collections-feature-wrap .total {
     font-family: 'Poppins-Semibold';
 }
+
+
 /* End Collections Feature */
 
+
 /* Garrys Collection Page */
+
 
 /* Footer */
 
@@ -603,7 +615,7 @@ p {
     font-size: 13px;
 }
 
-<<<<<<< HEAD
+
 /* end of FAQ section */
 
 
@@ -752,6 +764,6 @@ p {
 
 
 /* end of Token Section */
-=======
+
+
 /* End Footer */
->>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30

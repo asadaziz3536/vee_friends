@@ -56,6 +56,9 @@ const Timeline = () => {
     ];
 
     return (
+
+        <div>
+            <div class="main-title-wrapper"><h2>Timeline</h2></div>
         <Container>
             <div style={{ width: "100%", height: "100%" }} className='timeline-wrapper'>
                 <Chrono items={items}
@@ -78,6 +81,7 @@ const Timeline = () => {
                 />
             </div>
         </Container>
+        </div>
     )
 }
 
