@@ -21,22 +21,22 @@ const Footer = () => {
                         </form>
                     </Col>
                     <Col md={6} sm={12}>
-                        <h5 className='mb-0 pt-sm-4 pt-xs-4'>Follow the VeeFriends!</h5>
-                        <a href="">
+                        <h5 className='mb-0 pt-4 pt-sm-4 pt-md-0'>Follow the VeeFriends!</h5>
+                        <Link to="/">
                             <img src="assets/images/discord.svg" alt="" />
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/">
                             <img src="assets/images/twitter-btn.svg" alt="" />
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/">
                             <img src="assets/images/insta.svg" alt="" />
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/">
                             <img src="assets/images/tiktok.svg" alt="" />
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/">
                             <img src="assets/images/youtube.svg" alt="" />
-                        </a>
+                        </Link>
                     </Col>
                 </Row>
                 <hr  />
@@ -50,46 +50,46 @@ const Footer = () => {
                                 <h6>Vee Friends</h6>
                                 <ul className='list-unstyled'>
                                     <li>
-                                        <a href="">Library</a>
+                                        <Link to="/">Library</Link>
                                     </li>
                                     <li>
-                                        <a href="">Explore All</a>
+                                        <Link to="/">Explore All</Link>
                                     </li>
                                     <li>
-                                        <a href="">Gary's Collection</a>
+                                        <Link to="/">Gary's Collection</Link>
                                     </li>
                                     <li>
-                                        <a href="">Access</a>
+                                        <Link to="/">Access</Link>
                                     </li>
                                     <li>
-                                        <a href="">Gift</a>
+                                        <Link to="/">Gift</Link>
                                     </li>
                                     <li>
-                                        <a href="">Top 5</a>
+                                        <Link to="/">Top 5</Link>
                                     </li>
                                     <li>
-                                        <a href="">Blog</a>
+                                        <Link to="/">Blog</Link>
                                     </li>
                                 </ul>
                             </Col>
                             <Col lg={4} md={6}>
                                 <h6>Connect</h6>
                                 <ul className='list-unstyled'>
-                                    <li><a href="">My Profile</a></li>
-                                    <li><a href="">FAQ'S</a></li>
-                                    <li><a href="">Discord</a></li>
-                                    <li><a href="">Instagram</a></li>
-                                    <li><a href="">Twitter</a></li>
-                                    <li><a href="">YouTube</a></li>
-                                    <li><a href="">Contact</a></li>
+                                    <li><Link to="/">My Profile</Link></li>
+                                    <li><Link to="/">FAQ'S</Link></li>
+                                    <li><Link to="/">Discord</Link></li>
+                                    <li><Link to="/">Instagram</Link></li>
+                                    <li><Link to="/">Twitter</Link></li>
+                                    <li><Link to="/">YouTube</Link></li>
+                                    <li><Link to="/">Contact</Link></li>
                                 </ul>
                             </Col>
                             <Col lg={4} md={6} sm={12}>
                                 <h6>GrayVee</h6>
                                 <ul className='list-unstyled'>
-                                    <li><a href="">VeeCon</a></li>
-                                    <li><a href="">Garyvaynerchuk.com</a></li>
-                                    <li><a href="">VaynerNFT</a></li>
+                                    <li><Link to="/">VeeCon</Link></li>
+                                    <li><Link to="/">Garyvaynerchuk.com</Link></li>
+                                    <li><Link to="/">VaynerNFT</Link></li>
                                 </ul>
                             </Col>
                         </Row>

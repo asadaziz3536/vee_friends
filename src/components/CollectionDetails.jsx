@@ -18,13 +18,13 @@ const CollectionDetails = () => {
                     </Col>
                 </Row>
                 <Row className='py-5 originalart-row'>
-                    <Col>
-                        <img src="assets/images/responsive.png" alt="" />
+                    <Col sm={12} md={6}>
+                        <img src="assets/images/responsive.png" style={{width:'100%'}} alt="" />
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <div className="content-wrapper">
                             <div className="content">
-                                <h2>The Original Art</h2>
+                                <h2 className='pt-3 pt-sm-4 pt-md-0'>The Original Art</h2>
                                 <h3>The birth of Responsive Ram!</h3>
                                 <p>Each collectible was orginially hand drawn by GrayVee,
                                     The main ambitions of this project is to create meangiful

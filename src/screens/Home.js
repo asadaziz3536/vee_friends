@@ -1,6 +1,7 @@
 import React from 'react'
 import Faqs from '../components/Faqs'
 import Hero from '../components/Hero'
+import Timeline from '../components/Timeline'
 import LatestPosts from '../components/LatestPosts'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
            
             <Hero />
             <LatestPosts />
+            <Timeline />
             <Faqs />
             
         </div>

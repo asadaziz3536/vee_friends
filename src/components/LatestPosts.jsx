@@ -48,10 +48,10 @@ const LatestPosts = () => {
                         <Row className='floor-prices'>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3} >
+                                    <Col md={3} sm={3} xs={3} >
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill' >Core</span>
                                             <h3 className='pt-1 mb-0'>Sufficient Shrimp</h3>
@@ -62,10 +62,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill pink' >Bubble Gum</span>
                                             <h3 className='pt-1 mb-0'>Conviction Cockroach</h3>
@@ -76,10 +76,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill brown' >Rare</span>
                                             <h3 className='pt-1 mb-0'>Keen Kingfisher</h3>
@@ -90,10 +90,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill yellow' >Gold</span>
                                             <h3 className='pt-1 mb-0'>Dapper Dachshund</h3>
@@ -104,10 +104,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill green' >Epic</span>
                                             <h3 className='pt-1 mb-0'>Tolerant Tuna</h3>
@@ -118,10 +118,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill purple' >Hologram</span>
                                             <h3 className='pt-1 mb-0'>Bold As Fuck Bat</h3>
@@ -132,10 +132,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill yellow' >G.O.O</span>
                                             <h3 className='pt-1 mb-0'>Swaggy Sea Lion</h3>
@@ -146,10 +146,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill red' >Lava</span>
                                             <h3 className='pt-1 mb-0'>Jolly Jack-O</h3>
@@ -160,10 +160,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill green' >Epic</span>
                                             <h3 className='pt-1 mb-0'>Meticulous Magpie</h3>
@@ -174,10 +174,10 @@ const LatestPosts = () => {
                             </Col>
                             <Col md={6} className='custom-card' >
                                 <Row className=''>
-                                    <Col md={3}>
+                                    <Col  md={3} sm={3} xs={3}>
                                         <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
                                     </Col>
-                                    <Col md={9}>
+                                    <Col  md={9} sm={9} xs={9}>
                                         <div className="card-content">
                                             <span className='category-pill darkgreen' >Diamond</span>
                                             <h3 className='pt-1 mb-0'>Level Headed Lizard</h3>

@@ -28,28 +28,21 @@ const RecentActivityTable = () => {
                                         <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }}>GBP4,797.45</span>
                                     </Col>
                                     <Col>
-                                        <img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
-                                        <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>0x00000...0000</span>
-                                    </Col>
-                                    <Col><img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
-                                        <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>kiideas</span>
-                                    </Col>
-                                    <Col><span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} >5 months ago</span></Col>
-                                </div>
-                                <div className="row">
-                                    <Col><span className='status'>Mint</span></Col>
-                                    <Col><span className='d-block' style={{ fontFamily: 'Poppins-Bold' }} >1.5</span>
-                                        <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }}>GBP4,797.45</span>
+                                        <div class='d-flex align-item-center' style={{ wordBreak: 'break-all' }}>
+                                            <img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
+                                            <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>0x00000...0000</span>
+                                        </div>
                                     </Col>
                                     <Col>
-                                        <img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
-                                        <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>0x00000...0000</span>
-                                    </Col>
-                                    <Col><img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
-                                        <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>kiideas</span>
+                                        <div class='d-flex align-item-center' style={{ wordBreak: 'break-all' }}>
+                                            <img style={{ width: '30px', height: '30px', borderRadius: '12px' }} src='assets/images/100.png' />
+                                            <span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} className='ms-1 ens-name'>kiideas</span>
+                                        </div>
                                     </Col>
                                     <Col><span style={{ color: '#A1A1A1', fontFamily: 'Poppins-Medium' }} >5 months ago</span></Col>
                                 </div>
+
+
                             </div>
                         </div>
                     </Row>
