@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Poppins-Semibold";
+    src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
     font-family: "Poppins-Medium";
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
@@ -13,6 +18,7 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+<<<<<<< HEAD
 @font-face {
     font-family: "Poppins-SemiBold";
     src: url(assets/fonts/Poppins-SemiBold.ttf);
@@ -25,12 +31,23 @@ h1 {
 
 h3 {
     font-size: 12px;
+=======
+h1, h2, h3, h4, h5, h6 {
+>>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
     font-family: "Poppins-Bold";
 }
 
 p {
     font-family: "Poppins-Regular";
     font-size: 11px;
+}
+
+.custom-nav {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.custom-nav .navbar-nav .nav-link {
+    color: #000 !important;
 }
 
 .custom-btn {
@@ -52,13 +69,7 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-#root p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#root p, h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     margin-bottom: 0px !important;
 }
@@ -83,13 +94,12 @@ h6 {
 .custom-nav a {
     font-family: "Poppins-Bold";
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .theme-accent {
     color: #b704b7;
 }
-
 
 /* Hero Section  */
 
@@ -104,22 +114,66 @@ h6 {
 }
 
 .hero-section h1 {
+<<<<<<< HEAD
     color: #ff7f00;
+=======
+    color: #FF7F00;
+    font-size: 43px;
+>>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
 }
 
 .hero-section .custom-btn {
     background-color: #b704b7;
 }
 
+.hero-section img {
+    width: 130px;
+}
+
+.hero-section .hero-content {
+    max-width: 350px;
+    margin: auto;
+}
+
+.hero-section .hero-content .btn {
+    margin-top: 24px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8), transparent);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .hero-section img {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .hero-section img {
+        display: none;
+    }
+}
 
 /* End Hero Section  */
-
 
 /* Latest Posts */
 
 .latestposts-section {
     margin-top: -30px;
     padding-bottom: 70px;
+}
+
+.latestposts-section h3 {
+    font-size: 14px;
 }
 
 .latestposts-section .top-title-pill {
@@ -130,6 +184,10 @@ h6 {
     border-radius: 26px;
     padding: 20px 40px;
     font-family: "Poppins-Bold";
+}
+
+.latestposts-section .card {
+    margin: auto;
 }
 
 .category-pill {
@@ -151,6 +209,10 @@ h6 {
     font-size: 11px;
 }
 
+.floor-prices .custom-card img {
+    max-width: 64px;
+}
+
 .latestposts-section .custom-card {
     margin-bottom: 49px;
 }
@@ -169,7 +231,13 @@ h6 {
 
 .latestposts-section .card-main-title {
     font-size: 15px;
+<<<<<<< HEAD
     font-family: "Poppins-Bold";
+=======
+    font-family: 'Poppins-Bold';
+    display: flex;
+    align-items: stretch;
+>>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30
 }
 
 .category-pill.pink {
@@ -213,9 +281,15 @@ h6 {
     }
 }
 
+@media screen and (max-width:575.98px) {
+    .latestposts-section .top-title-pill {
+        margin-top: 20px;
+    }
+}
 
 /* End Latest Posts */
 
+/* End Latest Posts */
 
 /* FAQ section */
 
@@ -256,12 +330,280 @@ h6 {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button,
-.accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
+/* end of FAQ section */
 
+/* Post Detail feature  */
+
+.postdetail-feature {
+    padding: 42px 0px;
+}
+
+.postdetail-feature {
+    padding: 42px 0px;
+}
+
+.postdetail-feature a {
+    box-shadow: 0px 3px 6px #00000029;
+    max-width: 222px;
+    display: block;
+    border-radius: 6px;
+}
+
+.admission-redeem {
+    background-color: #F0F0F0;
+    max-width: 150px;
+    padding: 7px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: 'Poppins-Medium';
+}
+
+.edition {
+    background-color: #fff;
+}
+
+.edition span {
+    font-family: 'Poppins-Bold';
+    color: #A1A1A1;
+}
+
+.postdetail-feature .description {
+    color: #A1A1A1;
+}
+
+.postdetail-feature h3 {
+    font-size: 14px;
+}
+
+.postdetail-feature .description p:first-child {
+    font-family: 'Poppins-Bold';
+}
+
+.postdetail-feature .description p:last-child {
+    font-family: 'Poppins-Medium';
+}
+
+.postdetail-feature .details p {
+    color: #000;
+    font-family: 'Poppins-Bold';
+    font-size: 13px;
+}
+
+.postdetail-feature .date {
+    color: #000;
+}
+
+@media screen {
+    .postdetail-feature a {
+        max-width: 100%;
+    }
+}
+
+/* End Post Detail Feature */
+
+/* Recent Activity */
+
+.main-title-wrapper h2 {
+    background: #fff;
+    box-shadow: 0px 3px 7px #ccc;
+    border-radius: 34px;
+    max-width: 281px;
+    text-align: center;
+    margin: auto;
+    z-index: 20;
+    border: 1px solid #707070;
+    margin: 32px auto;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.main-title-wrapper {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-title-wrapper:before, .main-title-wrapper:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #707070;
+    z-index: -1;
+}
+
+.main-title-wrapper:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+.color {
+    background-color: #ccc;
+}
+
+.recent-activity {
+    padding: 50px 0px;
+}
+
+.recent-activity a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins-Regular';
+}
+
+.table-container {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    max-width: 793px;
+    margin: auto;
+}
+
+.custom-table .row .col {
+    padding: 10px;
+}
+
+.custom-table .status {
+    background-color: #ff9517;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+
+.custom-table .table-head {
+    font-family: 'Poppins-Bold';
+}
+
+@media screen and (min-width:767.98px) and (max-width:991.98px) {
+    .table-container {
+        margin: 20px;
+    }
+    .recent-activity .link {
+        margin: 20px !important;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .table-container {
+        margin: 20px;
+    }
+    .recent-activity .link {
+        margin: 20px !important;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .table-wrapper {
+        width: 700px;
+    }
+    .table-container {
+        overflow: auto;
+    }
+}
+
+/* End Recent Activity */
+
+/* Collection Detail */
+
+.collection-detail .originalart-row .content-wrapper {
+    max-width: 380px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/* End Collection Detail */
+
+/* Post Detail Page */
+
+
+
+/* Garrys Collection Page */
+
+/* Collections Feature */
+.collections-feature-wrap .stats-pannel{
+    margin-top: 30px;
+}
+.collections-feature-wrap .stats-pannel .col{
+    padding: 12px;
+}
+.collections-feature-wrap .col:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+.collections-feature-wrap .total{
+    font-family: 'Poppins-Semibold';
+}
+/* End Collections Feature */
+
+/* Garrys Collection Page */
+
+/* Footer */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0px 20px 0px;
+}
+
+.footer h5 {
+    font-size: 23px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'poppins-regular';
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer .input-wrapper {
+    position: relative;
+    max-width: 387px;
+}
+
+.footer .input-wrapper input {
+    border-radius: 30px;
+    padding: 7px 85px 7px 7px;
+}
+
+.footer .input-wrapper input::placeholder {
+    font-family: 'poppins-regular';
+}
+
+.footer .input-wrapper .btn {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    background-color: #0AD900;
+    box-shadow: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.footer .container-fluid .row {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.footer button {
+    font-family: 'Poppins-Bold';
+    font-size: 13px;
+}
+
+<<<<<<< HEAD
 /* end of FAQ section */
 
 
@@ -410,3 +752,6 @@ h6 {
 
 
 /* end of Token Section */
+=======
+/* End Footer */
+>>>>>>> 90112aa2d03a77ff541b196ca7c1d58e59f7cf30

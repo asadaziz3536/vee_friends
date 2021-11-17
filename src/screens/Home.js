@@ -1,14 +1,15 @@
 import React from 'react'
-import Header from '../components/Header'
+import Faqs from '../components/Faqs'
 import Hero from '../components/Hero'
 import LatestPosts from '../components/LatestPosts'
 
 const Home = () => {
     return (
-        <div>
-            <Header/>
+        <div className='Homepage-wrapper'>
+           
             <Hero />
             <LatestPosts />
+            <Faqs />
             
         </div>
     )

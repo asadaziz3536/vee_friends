@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
 
 
 const Header = () => {
@@ -8,9 +10,9 @@ const Header = () => {
             <div className="announcement-bar text-center p-2">
                 <p className='mb-0'>Check out our first ever Mini Drop - "Spooky Vees"</p>
             </div>
-            <Navbar bg="white" expand="lg"  className='custom-nav'>
+            <Navbar id='myHeader' expand="lg"  className='custom-nav'>
                 <Container>
-                    <Navbar.Brand href="#home"> <img
+                    <Navbar.Brand > <img
                         src="assets/icons/logoipsum-logo.svg"
                         width="180"
                         height="40"
@@ -21,9 +23,9 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto align-items-lg-center">
                             <Nav.Link href="#home">library</Nav.Link>
-                            <Nav.Link href="#link">Gary's Collection</Nav.Link>
+                            <Nav.Link to='/garryscollection'>Gary's Collection</Nav.Link>
                             <Nav.Link href="#link">Explore Friends</Nav.Link>
-                            <Button href="#" className='custom-btn' >Connect Wallet</Button>
+                            <Button href="#" className='custom-btn' style={{boxShadow:'0px 3px 10px #00000073'}} >Connect Wallet</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
