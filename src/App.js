@@ -2,7 +2,7 @@
 import './App.css';
 // import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Routes from '../src/routes'
+import Routes from './Routes'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -21,12 +21,12 @@ function App() {
   }, [])
 
   return (
-    <div className="">
-      <Router>
-        <Routes />
-      </Router>
-    </div>
-  );
+    <Fragment >
+      <Router >
+        <Routes/>
+      </Router>  
+    </Fragment>
+  )
 }
 
 export default App;
