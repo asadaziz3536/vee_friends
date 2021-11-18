@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import Tilt from "react-parallax-tilt";
 
 
 const CollectionsFeature = () => {
@@ -10,7 +10,9 @@ const CollectionsFeature = () => {
                 <Container>
                     <Row>
                         <Col sm={12} md={12} lg={6} className='text-center'>
-                            <img src="assets/images/card.png" alt="" />
+                            <Tilt>
+                                <img src="assets/images/card.png" alt="" />
+                            </Tilt>
                         </Col>
                         <Col sm={12} md={12} lg={6}>
                             <div className="edition">
@@ -35,32 +37,29 @@ const CollectionsFeature = () => {
                                             <div className='total'>
                                                 <span>40</span>
                                             </div>
-                                            <div>
-                                                <span style={{color:'#8D8D8D' , fontFamily:'Poppins-Semibold'}}>Total</span>
+                                            <div className='small-desc'>
+                                                <span style={{ color: '#8D8D8D', fontFamily: 'Poppins-Semibold' }}>Total</span>
                                             </div>
                                         </Col>
                                         <Col>
                                             <div className='total owners'>
                                                 <span>40</span>
                                             </div>
-                                            <div>
-                                                <span style={{color:'#8D8D8D' , fontFamily:'Poppins-Semibold'}}>Owners</span>
+                                            <div className='small-desc'>
+                                                <span style={{ color: '#8D8D8D', fontFamily: 'Poppins-Semibold' }}>Owners</span>
                                             </div>
                                         </Col>
                                         <Col>
                                             <div className='total average'>
                                                 <span>2.82</span>
                                             </div>
-                                            <div>
-                                                <span style={{color:'#8D8D8D', fontFamily:'Poppins-Semibold'}}>Average Price</span>
+                                            <div className='small-desc'>
+                                                <span style={{ color: '#8D8D8D', fontFamily: 'Poppins-Semibold' }}>Average Price</span>
                                             </div>
                                         </Col>
-                                       
-                                       
                                     </Row>
                                 </Col>
                             </Row>
-                            
                         </Col>
                     </Row>
                 </Container>

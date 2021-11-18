@@ -18,16 +18,11 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins-Bold";
 }
 
@@ -36,7 +31,8 @@ p {
     font-size: 11px;
 }
 
- /* Header */
+/* Header */
+
 .custom-nav {
     box-shadow: 0px 3px 6px #00000029;
 }
@@ -44,13 +40,14 @@ p {
 .custom-nav .navbar-nav .nav-link {
     color: #000 !important;
 }
-.custom-nav .navbar-nav .nav-link a{
+
+.custom-nav .navbar-nav .nav-link a {
     text-decoration: none;
 }
 
-.custom-nav .navbar-nav .nav-link a:hover{
+.custom-nav .navbar-nav .nav-link a:hover {
     color: #9ace00;
-    text-shadow: 0px 0px 3px 10px #9ace00 ;
+    text-shadow: 0px 0px 3px 10px #9ace00;
 }
 
 .custom-btn {
@@ -72,13 +69,7 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-#root p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#root p, h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
@@ -110,7 +101,6 @@ h6 {
 }
 
 /* End Header  */
-
 
 /* Hero Section  */
 
@@ -146,7 +136,6 @@ h6 {
     margin-top: 24px;
 }
 
-
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 
 .sticky {
@@ -180,8 +169,7 @@ h6 {
     transform: rotateY(180deg);
 }
 
-.hero-section .flip-card-front,
-.flip-card-back {
+.hero-section .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -200,20 +188,17 @@ h6 {
     transform: rotateY(180deg);
 }
 
-
 /* width */
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-
 /* Track */
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
 
 /* Handle */
 
@@ -222,14 +207,11 @@ h6 {
     border-radius: 8px;
 }
 
-
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
     background: #9ACE00;
 }
-
-
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .hero-section img {
@@ -240,8 +222,8 @@ h6 {
         height: 100px
     }
 }
+
 @media screen and (min-width:840px) and (max-width:1024px) {
-    
     .hero-section .flip-card {
         width: 86px;
     }
@@ -253,9 +235,7 @@ h6 {
     }
 }
 
-
 /* End Hero Section  */
-
 
 /* Latest Posts */
 
@@ -382,12 +362,228 @@ h6 {
     }
 }
 
-
 /* End Latest Posts */
 
+/* TimeLine Section  */
 
-/* End Latest Posts */
+.timeline-wrapper {
+    padding: 90px 0px;
+}
 
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #C3C3C3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.timeline-container.left {
+    left: 0;
+}
+
+.timeline-container.right {
+    left: 50%;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: calc(50% - 8px);
+    right: -12px;
+    background: #ffffff;
+    border: 2px solid #C3C3C3;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.timeline-container.right::after {
+    left: -12px;
+}
+
+.timeline-container.right::before {
+    left: 8px;
+}
+
+.timeline-container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #006E51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px;
+    color: #000;
+    margin-top: -24px;
+    border-radius: 4px;
+}
+
+.timeline-container .announcement {
+    background: #0AD900;
+    border-radius: 16px;
+    margin-top: -20px;
+    color: #fff;
+    padding: 0px 4px;
+}
+
+.timeline-container .date .announcement span {
+    font-size: 8px;
+    font-family: 'Poppins-Bold';
+}
+
+.timeline-container.filled::after {
+    background: #C3C3C3;
+}
+
+.timeline-container.active::after {
+    background: #0AD900;
+}
+
+.timeline-container .date span {
+    font-family: 'Poppins-Bold';
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.timeline-container .date .day span {
+    font-size: 32px;
+}
+
+.timeline-container .date .year span {
+    color: #948F8F;
+}
+
+.timeline-container.left .date {
+    right: -122px;
+}
+
+.timeline-container.right .date {
+    left: -122px;
+}
+
+.timeline-container.left .icon {
+    right: 56px;
+}
+
+.timeline-container.right .icon {
+    left: 56px;
+}
+
+.timeline-container .content {
+    padding: 12px;
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+}
+
+.timeline-container.right .content {
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.timeline-container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.timeline-container .content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+@media screen and (min-width: 768px) {
+    .timeline-container.left .content {
+        transform: rotate( 
+            358deg);
+    }
+    
+    .timeline-container.right .content {
+        transform: rotate( 2deg);
+        margin-top: 40px;
+    }
+    .timeline-container.left .content:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .timeline::after {
+        left: 115px;
+    }
+    .timeline-container {
+        width: 100%;
+        padding-left: 130px;
+        padding-right: 15px;
+    }
+    .timeline-container.right {
+        left: 0%;
+    }
+    .timeline-container.left::after, .timeline-container.right::after {
+        left: 102px;
+    }
+    .timeline-container .content h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .timeline-container .content p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .timeline-container .date span {
+        line-height: 18px;
+    }
+    .timeline-container.left::before, .timeline-container.right::before {
+        left: 100px;
+        border-color: transparent #006E51 transparent transparent;
+    }
+    .timeline-container.left .date, .timeline-container.right .date {
+        right: auto;
+        left: 6px;
+    }
+    .timeline-container.left .icon, .timeline-container.right .icon {
+        right: auto;
+        left: 146px;
+    }
+    .timeline-container .date {
+        padding: 6px;
+    }
+    .timeline-container.left .content, .timeline-container.right .content {
+        padding: 6px;
+        border: 12px;
+    }
+}
+
+/* End of Timeline Section */
 
 /* FAQ section */
 
@@ -436,8 +632,7 @@ h6 {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button,
-.accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
@@ -455,9 +650,7 @@ h6 {
     }
 }
 
-
 /* end of FAQ section */
-
 
 /* Post Detail feature  */
 
@@ -520,15 +713,15 @@ h6 {
     color: #000;
 }
 
-@media screen {
-    .postdetail-feature a {
-        max-width: 100%;
-    }
+.postdetail-feature a:hover {
+    box-shadow: 0px 3px 4px;
 }
 
+.postdetail-feature .stats-pannel .small-desc {
+    font-size: 12px;
+}
 
 /* End Post Detail Feature */
-
 
 /* Recent Activity */
 
@@ -554,8 +747,7 @@ h6 {
     text-align: center;
 }
 
-.main-title-wrapper:before,
-.main-title-wrapper:after {
+.main-title-wrapper:before, .main-title-wrapper:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
@@ -653,9 +845,7 @@ h6 {
     }
 }
 
-
 /* End Recent Activity */
-
 
 /* Collection Detail */
 
@@ -674,15 +864,11 @@ h6 {
     }
 }
 
-
 /* End Collection Detail */
-
 
 /* Post Detail Page */
 
-
 /* Garrys Collection Page */
-
 
 /* Collections Feature */
 
@@ -702,12 +888,15 @@ h6 {
     font-family: 'Poppins-Semibold';
 }
 
+@media screen and (max-width:767.98px) {
+    .collections-feature-wrap .stats-pannel .col {
+        padding: 8px;
+    }
+}
 
 /* End Collections Feature */
 
-
 /* Garrys Collection Page */
-
 
 /* Footer */
 
@@ -776,12 +965,9 @@ h6 {
     }
 }
 
-
 /* End Footer */
 
-
 /* end of FAQ section */
-
 
 /* Timeline section */
 
@@ -864,9 +1050,7 @@ h6 {
     }
 }
 
-
 /* end of Timeline section */
-
 
 /* Token Section */
 
@@ -926,9 +1110,7 @@ h6 {
     top: 0px;
 }
 
-
 /* end of Token Section */
-
 
 /* slider section */
 
@@ -956,8 +1138,6 @@ h6 {
     color: white !important;
 }
 
-
 /* end of slider section */
-
 
 /* End Footer */
