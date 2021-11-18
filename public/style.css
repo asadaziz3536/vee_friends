@@ -22,7 +22,12 @@ a {
     text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins-Bold";
 }
 
@@ -31,15 +36,12 @@ p {
     font-size: 11px;
 }
 
-<<<<<<< HEAD
 .btn-primary:hover {
     background: linear-gradient(to right, #67b63c, #67b938) !important;
     border-color: transparent !important;
 }
 
 
-=======
->>>>>>> 1933a52fb2a7eb1b2d3e4d552ac8055ea65f749a
 /* Header */
 
 .custom-nav {
@@ -78,7 +80,13 @@ p {
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-#root p, h1, h2, h3, h4, h5, h6 {
+#root p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
 }
 
@@ -111,6 +119,7 @@ p {
 
 
 /* End Header  */
+
 
 /* Hero Section  */
 
@@ -146,6 +155,7 @@ p {
     margin-top: 24px;
 }
 
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 
 .sticky {
@@ -179,7 +189,8 @@ p {
     transform: rotateY(180deg);
 }
 
-.hero-section .flip-card-front, .flip-card-back {
+.hero-section .flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -198,11 +209,13 @@ p {
     transform: rotateY(180deg);
 }
 
+
 /* width */
 
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 
 /* Track */
 
@@ -210,12 +223,14 @@ p {
     background: #f1f1f1;
 }
 
+
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
     background: #9ACE00;
     border-radius: 8px;
 }
+
 
 /* Handle on hover */
 
@@ -245,7 +260,9 @@ p {
     }
 }
 
+
 /* End Hero Section  */
+
 
 /* Latest Posts */
 
@@ -372,7 +389,9 @@ p {
     }
 }
 
+
 /* End Latest Posts */
+
 
 /* TimeLine Section  */
 
@@ -530,13 +549,10 @@ p {
     color: #000000;
 }
 
-
 @media screen and (min-width: 768px) {
     .timeline-container.left .content {
-        transform: rotate( 
-            358deg);
+        transform: rotate( 358deg);
     }
-    
     .timeline-container.right .content {
         transform: rotate( 2deg);
         margin-top: 40px;
@@ -545,6 +561,7 @@ p {
         margin-top: 40px;
     }
 }
+
 @media screen and (max-width: 767.98px) {
     .timeline::after {
         left: 115px;
@@ -557,7 +574,8 @@ p {
     .timeline-container.right {
         left: 0%;
     }
-    .timeline-container.left::after, .timeline-container.right::after {
+    .timeline-container.left::after,
+    .timeline-container.right::after {
         left: 102px;
     }
     .timeline-container .content h2 {
@@ -572,28 +590,34 @@ p {
     .timeline-container .date span {
         line-height: 18px;
     }
-    .timeline-container.left::before, .timeline-container.right::before {
+    .timeline-container.left::before,
+    .timeline-container.right::before {
         left: 100px;
         border-color: transparent #006E51 transparent transparent;
     }
-    .timeline-container.left .date, .timeline-container.right .date {
+    .timeline-container.left .date,
+    .timeline-container.right .date {
         right: auto;
         left: 6px;
     }
-    .timeline-container.left .icon, .timeline-container.right .icon {
+    .timeline-container.left .icon,
+    .timeline-container.right .icon {
         right: auto;
         left: 146px;
     }
     .timeline-container .date {
         padding: 6px;
     }
-    .timeline-container.left .content, .timeline-container.right .content {
+    .timeline-container.left .content,
+    .timeline-container.right .content {
         padding: 6px;
         border: 12px;
     }
 }
 
+
 /* End of Timeline Section */
+
 
 /* FAQ section */
 
@@ -642,7 +666,8 @@ p {
     opacity: 1;
 }
 
-.accordion-wrapper .accordion-button, .accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-button,
+.accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
@@ -660,7 +685,9 @@ p {
     }
 }
 
+
 /* end of FAQ section */
+
 
 /* Post Detail feature  */
 
@@ -731,7 +758,9 @@ p {
     font-size: 12px;
 }
 
+
 /* End Post Detail Feature */
+
 
 /* Recent Activity */
 
@@ -757,7 +786,8 @@ p {
     text-align: center;
 }
 
-.main-title-wrapper:before, .main-title-wrapper:after {
+.main-title-wrapper:before,
+.main-title-wrapper:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
@@ -855,7 +885,9 @@ p {
     }
 }
 
+
 /* End Recent Activity */
+
 
 /* Collection Detail */
 
@@ -874,11 +906,15 @@ p {
     }
 }
 
+
 /* End Collection Detail */
+
 
 /* Post Detail Page */
 
+
 /* Garrys Collection Page */
+
 
 /* Collections Feature */
 
@@ -904,9 +940,12 @@ p {
     }
 }
 
+
 /* End Collections Feature */
 
+
 /* Garrys Collection Page */
+
 
 /* Footer */
 
@@ -975,9 +1014,12 @@ p {
     }
 }
 
+
 /* End Footer */
 
+
 /* end of FAQ section */
+
 
 /* Timeline section */
 
@@ -1060,7 +1102,9 @@ p {
     }
 }
 
+
 /* end of Timeline section */
+
 
 /* Token Section */
 
@@ -1071,7 +1115,14 @@ p {
 
 .card-wrapper .card {
     word-wrap: unset;
+    /* width: 11.063rem;
+    height: 15.75rem; */
 }
+
+
+/* .card-wrapper .card-img-top {
+    height: 9.75rem;
+} */
 
 .card-wrapper p {
     font-family: "Poppins-Bold";
@@ -1120,7 +1171,9 @@ p {
     top: 0px;
 }
 
+
 /* end of Token Section */
+
 
 /* slider section */
 
@@ -1148,6 +1201,8 @@ p {
     color: white !important;
 }
 
+
 /* end of slider section */
+
 
 /* End Footer */

@@ -54,83 +54,82 @@ const Slider = () => {
     const tokenArray = [
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
+            valueTitle: 'TOTAL',
+            titleImg: "/assets/images/Group 175.svg"
         },
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '30',
-            valueTitle: 'TOTAL'
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
+            valueTitle: 'TOTAL',
+            titleImg: "/assets/images/Group 175.svg",
         },
         {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         }, {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
 
         },
         {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '30',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         },
         {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         },
         {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         }, {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
 
         },
         {
+            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '30',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         },
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 104.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
+            title: "Tough To Beat A Wor...",
+            logo: "/assets/images/Group 173.svg",
+            titleImg: "/assets/images/Group 175.svg",
+            logoTitle: "JUST ART",
             valueTitle: 'TOTAL'
         }
     ]
@@ -161,25 +160,27 @@ const Slider = () => {
                         <Col className='card-wrapper' key={ind} >
                             <Card style={{ borderRadius: '14px', marginRight: '20px', width: '11.75rem', height: '18.375rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }} className='col-12'>
 
-                          
-                                    <Card.Img style={{ borderTopLeftRadius: '14px', borderTopRightRadius: '14px', paddingBottom:'30px',
-                                     backgroundColor: '#F8F8F8', height: '8.375rem' }} variant="top" src={obj.cardImage} />
-                    
+
+                                <Card.Img style={{
+                                    borderTopLeftRadius: '14px', borderTopRightRadius: '14px', paddingBottom: '30px',
+                                    backgroundColor: '#F8F8F8', height: '8.375rem'
+                                }} variant="top" src={obj.cardImage} />
+
                                 <Card.Body>
-                                    <Row style={{ alignItems: 'center',marginTop:'-36px' }}>
+                                    <Row style={{ alignItems: 'center', marginTop: '-36px' }}>
 
                                         <Col className='col-8'>
                                             <div className='pill rounded-pill'
-                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background:'white' ,  padding: '6px', zIndex:'10' }}>
+                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background: 'white', padding: '6px', zIndex: '10' }}>
                                                 <span style={{ color: '#A7A7A7', fontFamily: 'Poppins-Bold' }}>#09396 13 OF 20</span>
                                             </div>
                                         </Col>
                                         <Col className='col-4'>
-                                            <Image src='assets/images/100.png' className='rounded-pill' style={{ width: '35px' }} alt='' />
+                                            <Image src={obj.logo} className='rounded-pill' style={{ width: '35px' }} alt='' />
                                         </Col>
 
                                         <Col className='col-2'>
-                                            <Image src={obj.logo} style={{ width: "14.84px", height: "12.37px", borderRadius: "100%" }} alt="this img" />
+                                            <Image src={obj.titleImg} style={{ width: "14.84px", height: "12.37px", borderRadius: "100%" }} alt="this img" />
                                         </Col>
                                         <Col className='col-10'>
                                             <p style={{ fontSize: '10px', paddingLeft: '3px' }}>{obj.logoTitle}</p>
@@ -195,10 +196,13 @@ const Slider = () => {
 
 
                                 </Card.Body>
-                                <div className='card-footer d-flex' style={{ justifyContent: 'space-between' }}>
-                                    <div><p>Last Sale</p></div>
+                                <span className='card-footer d-flex' style={{ justifyContent: 'space-between' }}>
+
+                                    <span>
+                                        <p>Last Sale</p>
+                                    </span>
                                     <div><p>10</p></div>
-                                </div>
+                                </span>
 
                             </Card>
                         </Col>
