@@ -57,7 +57,7 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL',
+            valueTitle: 'Core',
             titleImg: "/assets/images/Group 175.svg"
         },
         {
@@ -65,7 +65,7 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL',
+            valueTitle: 'Core',
             titleImg: "/assets/images/Group 175.svg",
         },
         {
@@ -74,14 +74,14 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         }, {
             titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
 
         },
         {
@@ -90,7 +90,7 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         },
         {
             titleImg: "/assets/images/Group 175.svg",
@@ -98,7 +98,7 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         },
         {
             titleImg: "/assets/images/Group 175.svg",
@@ -106,14 +106,14 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         }, {
             titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
 
         },
         {
@@ -122,7 +122,7 @@ const Slider = () => {
             title: "Tough To Beat A Wor...",
             logo: "/assets/images/Group 173.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         },
         {
             cardImage: "/assets/images/Group 174.svg",
@@ -130,7 +130,7 @@ const Slider = () => {
             logo: "/assets/images/Group 173.svg",
             titleImg: "/assets/images/Group 175.svg",
             logoTitle: "JUST ART",
-            valueTitle: 'TOTAL'
+            valueTitle: 'Core'
         }
     ]
 
