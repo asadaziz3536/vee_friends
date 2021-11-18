@@ -12,12 +12,10 @@ const Home = () => {
 
             <Hero />
             <LatestPosts />
-            <Slider/>
-            {/* <Timeline /> */}
-
+            <Slider />
             <TimelineNew />
             <Faqs />
-            
+
         </div>
     )
 }

@@ -117,8 +117,8 @@ const Tokens = () => {
             <div className=''>
 
                 <div class="main-title-wrapper"><h2>Library</h2></div>
-                <Container className='custom-contain-sm'>
-                    <div className='token-main-container'>
+                <Container className=''>
+                    <div className='token-main-container custom-contain-sm'>
                     <Col className='card-header-container'>
                         <Row className='card-quantity'>13 Tokens</Row>
                         <hr className='card-header-line' />
