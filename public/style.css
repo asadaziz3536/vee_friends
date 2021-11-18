@@ -897,12 +897,17 @@ p {
 .collections-feature-wrap .total {
     font-family: 'Poppins-Semibold';
 }
+.custom-contain-sm{
+    max-width: 800px !important;
+    margin: auto;
+}
 
 @media screen and (max-width:767.98px) {
     .collections-feature-wrap .stats-pannel .col {
         padding: 8px;
     }
 }
+
 
 /* End Collections Feature */
 

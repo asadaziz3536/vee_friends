@@ -57,7 +57,7 @@ const GarrysCollectionTokens = () => {
     return (
         <>
             <div class="main-title-wrapper"><h2>Collection</h2></div>
-            <Container>
+            <Container className='custom-contain-sm'>
                 <Row className='mx-sm-1 mx-1'>
                     <Col className='ps-0'>
                         <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>13 Tokens</span>

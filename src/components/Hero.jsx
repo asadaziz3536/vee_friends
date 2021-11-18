@@ -14,7 +14,6 @@ const Hero = () => {
                             <Button href="#" className='custom-btn' >Check out our first ever Mini Drop - "Spooky Vees"</Button>
                         </div>
                     </Col>
-
                     <Col className='d-none d-sm-none d-md-block' md={6}>
                         <Row>
                             <Col className='p-0'>
@@ -24,7 +23,7 @@ const Hero = () => {
                                             <img src="assets/images/card.png" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                     </div>
                                 </div>
@@ -33,7 +32,7 @@ const Hero = () => {
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
                                             <img src="assets/images/card.png" alt="Avatar" />
@@ -48,7 +47,7 @@ const Hero = () => {
                                             <img src="assets/images/card.png" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +56,7 @@ const Hero = () => {
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
                                             <img src="assets/images/card.png" alt="Avatar" />
@@ -72,7 +71,7 @@ const Hero = () => {
                                             <img src="assets/images/card.png" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +80,7 @@ const Hero = () => {
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
                                             <img src="assets/images/card.png" alt="Avatar" />
@@ -96,7 +95,7 @@ const Hero = () => {
                                             <img src="assets/images/card.png" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +104,7 @@ const Hero = () => {
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
                                             <img src="assets/images/card.png" alt="Avatar" />
@@ -120,7 +119,7 @@ const Hero = () => {
                                             <img src="assets/images/card.png" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                     </div>
                                 </div>
@@ -129,23 +128,15 @@ const Hero = () => {
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/Group 178.svg" alt="Avatar" />
                                         </div>
                                         <div class="flip-card-back">
-                                            <img src="assets/images/card.png" alt="Avatar" />
+                                            <img src="assets/images/card.png" alt="Avatar" />s
                                         </div>
                                     </div>
                                 </div>
                             </Col>
-
-
-
-
-
-
-
                         </Row>
-
                     </Col>
                 </Row>
             </Container>
