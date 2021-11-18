@@ -53,7 +53,7 @@ const Slider = () => {
 
     const tokenArray = [
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -62,7 +62,7 @@ const Slider = () => {
 
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -70,14 +70,14 @@ const Slider = () => {
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
             value: '40',
             valueTitle: 'TOTAL'
         }, {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -86,7 +86,7 @@ const Slider = () => {
 
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -94,7 +94,7 @@ const Slider = () => {
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -102,14 +102,14 @@ const Slider = () => {
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
             value: '40',
             valueTitle: 'TOTAL'
         }, {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -118,7 +118,7 @@ const Slider = () => {
 
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",
@@ -126,7 +126,7 @@ const Slider = () => {
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 174.svg",
             title: "Accountable Ant",
             logo: "/assets/images/Group 104.svg",
             logoTitle: "Keynote Koala",

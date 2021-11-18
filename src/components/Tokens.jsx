@@ -118,6 +118,7 @@ const Tokens = () => {
 
                 <div class="main-title-wrapper"><h2>Library</h2></div>
                 <Container>
+                    <div className='token-main-container'>
                     <Col className='card-header-container'>
                         <Row className='card-quantity'>13 Tokens</Row>
                         <hr className='card-header-line' />
@@ -176,7 +177,7 @@ const Tokens = () => {
                             })}
                         </Row>
                     </Col>
-
+                    </div>
                 </Container>
             </div>
         </>

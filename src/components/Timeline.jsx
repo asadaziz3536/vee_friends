@@ -24,10 +24,10 @@ const Timeline = () => {
     }, [width])
 
 
+    const [isTitle, setIsTitle] = useState('')
 
-    const line = 'VERTICAL_ALTERNATING'
     const items = [{
-        title: 'May 1995',
+        title: 'Almost Time OCT 11 2022',
         cardTitle: "Keynote Koala",
         cardSubtitle: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space,",
         media: {
@@ -37,7 +37,7 @@ const Timeline = () => {
             }
         }
     }, {
-        title: "May 1950",
+        title: 'Almost Time OCT 11 2022',
         cardTitle: "Keynote Kola",
         cardSubtitle: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space,",
         media: {
@@ -49,7 +49,7 @@ const Timeline = () => {
     }
     ];
 
-    // console.log(items.title.date)
+    
     return (
 
         <div>

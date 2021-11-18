@@ -51,7 +51,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3} >
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 172.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -67,7 +67,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 170.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -83,7 +83,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 171.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -99,7 +99,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 169.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -115,7 +115,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 168.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -131,7 +131,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 167.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -147,7 +147,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 165.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -163,7 +163,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 164.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -179,7 +179,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 163.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">
@@ -195,7 +195,7 @@ const LatestPosts = () => {
                                 <Link to='/postdetail'>
                                     <Row className=''>
                                         <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/card.png' />
+                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 166.svg' />
                                         </Col>
                                         <Col md={9} sm={9} xs={9}>
                                             <div className="card-content">

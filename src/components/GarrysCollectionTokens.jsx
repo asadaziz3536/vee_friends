@@ -5,49 +5,49 @@ const GarrysCollectionTokens = () => {
 
     const tokenArray = [
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'
         },
         {
-            cardImage: "/assets/images/Group 104.svg",
+            cardImage: "/assets/images/Group 177.svg",
             title: "Rare",
             value: '40',
             valueTitle: 'TOTAL'

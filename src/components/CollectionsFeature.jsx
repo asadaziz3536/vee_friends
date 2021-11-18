@@ -10,7 +10,7 @@ const CollectionsFeature = () => {
                 <Container>
                     <Row>
                         <Col sm={12} md={12} lg={6} className='text-center'>
-                            <img src="assets/images/card.png" alt="" />
+                            <img src="/assets/images/Group 178.svg" alt="" />
                         </Col>
                         <Col sm={12} md={12} lg={6}>
                             <div className="edition">
