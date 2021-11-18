@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Timeline from '../components/Timeline'
 import LatestPosts from '../components/LatestPosts'
 import Slider from '../components/Slider'
+import TimelineNew from '../components/TimelineNew'
 
 const Home = () => {
     return (
@@ -12,7 +13,9 @@ const Home = () => {
             <Hero />
             <LatestPosts />
             <Slider/>
-            <Timeline />
+            {/* <Timeline /> */}
+
+            <TimelineNew />
             <Faqs />
             
         </div>

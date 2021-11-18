@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import VanillaTilt from 'vanilla-tilt';
+import Tilt from "react-parallax-tilt";
 
 
 const PostDetailFeature = () => {
@@ -10,7 +10,9 @@ const PostDetailFeature = () => {
             <Container>
                 <Row>
                     <Col sm={12} md={6} className='text-center'>
-                        <img src="assets/images/card.png" alt="" data-tilt />
+                        <Tilt>
+                            <img src="assets/images/card.png" alt="" />
+                        </Tilt>
                     </Col>
                     <Col sm={12} md={6}>
                         <div className="edition">
