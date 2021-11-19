@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LeftComp from './LeftComp'
 import RightComp from './RightComp'
 
 const TimelineNew = () => {
     const mainArray = [
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
+        { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
+        { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
         { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
         { title: 'Key Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the", day: '14', month: 'Sep', year: '2018' },
         { title: 'Keynote Koala', desc: "VeeFriends community, it's very important for me to enjoy the next 45years of building this universe. As anobserve of the overall NFT space", day: '12', month: 'Aug', year: '2014' },
@@ -22,23 +36,33 @@ const TimelineNew = () => {
             rightArray.push(<RightComp data={mainArray[index]} />)
         }
 
-
     }
+
+    const [displayArray, setdisplayArray] = useState([''])
+    console.log("🚀 ~ file: TimelineNew.jsx ~ line 43 ~ TimelineNew ~ displayArray", displayArray)
+
+    const addItems = () => {
+        for (let index = displayArray.length; index < displayArray.length + 2; index++) {
+            console.log('inside loop')
+            setdisplayArray([...displayArray, index + 1])
+
+        }
+    }
+
     return (
         <div className='timeline-wrapper'>
             <div className="main-title-wrapper">
                 <h2>Timeline</h2>
             </div>
             {
-                mainArray.map((data, index) =>
+                displayArray.map((data, index) =>
                     <div key={index} className="timeline">
                         {leftArray[index]}
-                        {rightArray [index]}
+                        {rightArray[index]}
 
                     </div>
                 )
             }
-
 
             {/* <div className="timeline-container active left">
                     <div className="date">
@@ -99,7 +123,7 @@ const TimelineNew = () => {
                 </div> */}
 
             <div className="btn-wrapper text-center">
-                <button className="btn btn-primary"
+                <button className="btn btn-primary" onClick={() => addItems()}
                     style={{ background: '#0AD900', border: '1px solid transparent', fontFamily: 'Poppins-Medium', borderRadius: '16px', padding: '9px 30px' }}>Show more</button>
             </div>
 

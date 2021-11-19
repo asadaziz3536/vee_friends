@@ -23,9 +23,7 @@ const Timeline = () => {
         }
     }, [width])
 
-
     const [isTitle, setIsTitle] = useState('')
-
     const items = [{
         title: 'Almost Time OCT 11 2022',
         cardTitle: "Keynote Koala",
@@ -49,7 +47,6 @@ const Timeline = () => {
     }
     ];
 
-    
     return (
 
         <div>
@@ -72,8 +69,6 @@ const Timeline = () => {
                         slideShow
                         slideItemDuration={1000}
                         scrollable={{ scrollbar: true }}
-
-
                     />
 
                 </div>
