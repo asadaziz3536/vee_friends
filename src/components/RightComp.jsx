@@ -2,7 +2,7 @@ import React from 'react'
 
 function RightComp({data}) {
     return (
-        <div className="timeline-container filled right">
+        <div className="timeline-container active right">
             <div className="date">
                 <div className="announcement">
                     <span>ALMOST TIME!</span>
