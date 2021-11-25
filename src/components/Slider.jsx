@@ -175,12 +175,12 @@ const Slider = () => {
 
                                         <Col className='col-8'>
                                             <div className='pill rounded-pill'
-                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background: 'white', padding: '6px', zIndex: '10' }}>
+                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background: 'white', marginTop:'-10px', padding: '6px', zIndex: '10' }}>
                                                 <span style={{ color: '#A7A7A7', fontFamily: 'Poppins-Bold' }}>#09396 13 OF 20</span>
                                             </div>
                                         </Col>
                                         <Col className='col-4'>
-                                            <Image src={obj.logo} className='rounded-pill' style={{ width: '35px' }} alt='' />
+                                            <Image src={obj.logo} className='rounded-pill' style={{ width: '50px' }} alt='' />
                                         </Col>
 
                                         <Col className='col-2'>

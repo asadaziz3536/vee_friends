@@ -110,8 +110,8 @@ const Tokens = () => {
             <div className=''>
 
                 <div class="main-title-wrapper"><h2>Library</h2></div>
-                <Container>
-                    <div className='token-main-container'>
+                <Container className=''>
+                    <div className='token-main-container custom-contain-sm'>
                     <Col className='card-header-container'>
                         <Row className='card-quantity'>{tokenArray.length} Tokens</Row>
                         <hr className='card-header-line' />
