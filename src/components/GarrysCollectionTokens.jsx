@@ -60,7 +60,7 @@ const GarrysCollectionTokens = () => {
             <Container className='custom-contain-sm'>
                 <Row className='mx-sm-1 mx-1'>
                     <Col className='ps-0'>
-                        <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>13 Tokens</span>
+                        <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>{tokenArray.length} Tokens</span>
                     </Col>
                     <Col className='pe-0' style={{textAlign:'right'}}>
                         <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>View all</span>

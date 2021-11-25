@@ -100,7 +100,8 @@ const Tokens = () => {
             logoTitle: "Keynote Koala",
             value: '40',
             valueTitle: 'TOTAL'
-        }
+        },
+        
     ]
 
     const navArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -128,7 +129,7 @@ const Tokens = () => {
                     
                     <Row xs={1} md={4} className="g-4 card-wrapper">
                         {tokenArray.map((obj, ind) => (
-                            <Col sm={4} xs={6} md={3} lg={3} key={ind}>
+                            <Col sm={4} xs={6} md={3} lg={3} key={ind} >
                                 <Card style={{ borderRadius: '3%' }}>
                                     <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', backgroundColor: '#F8F8F8' }} variant="top" src={obj.cardImage} />
                                     <Card.Body>

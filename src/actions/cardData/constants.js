@@ -1,0 +1,1 @@
+export const SET_POST_CARD_DATA = 'SET_POST_CARD_DATA';

@@ -933,7 +933,8 @@ h6 {
 .collections-feature-wrap .total {
     font-family: 'Poppins-Semibold';
 }
-.custom-contain-sm{
+
+.custom-contain-sm {
     max-width: 800px !important;
     margin: auto;
 }

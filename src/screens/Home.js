@@ -7,6 +7,7 @@ import Slider from '../components/Slider'
 import TimelineNew from '../components/TimelineNew'
 
 const Home = () => {
+    console.log('home')
     return (
         <div className='Homepage-wrapper'>
 

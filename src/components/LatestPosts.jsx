@@ -1,10 +1,123 @@
 
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { Link, useHistory } from 'react-router-dom'
+import { latestPostCard } from '../actions/cardData/cardData'
+
 
 const LatestPosts = () => {
+
+    const history = useHistory()
+    const dispatch = useDispatch()
+    const postCard = [
+        {
+            cardImage: '/assets/images/Group 172.svg',
+            admissionToken: 'Core',
+            cardTitle: 'Sufficiant Shrimp',
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+            color: 'grey',
+            msg: 'success'
+
+        },
+        {
+            cardImage: '/assets/images/Group 170.svg',
+            admissionToken: 'Bubble Gum',
+            cardTitle: 'Conviction Cockroach',
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+            color: 'pink',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 171.svg',
+            admissionToken: 'Rare',
+            cardTitle: 'Keen Kingfisher',
+            onSale: '8.7',
+            cardType: 'BIRD',
+            color: 'brown',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 169.svg',
+            admissionToken: 'Gold',
+            cardTitle: 'Dapper Dachshund',
+            onSale: '8.7',
+            cardType: 'DOG',
+            color: 'yellow',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 168.svg',
+            admissionToken: 'Epic',
+            cardTitle: 'Tolerant Tuna',
+            onSale: '8.7',
+            cardType: 'FISH',
+            color: 'green',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 167.svg',
+            admissionToken: 'Hologram',
+            cardTitle: 'Bold As Fuck Bat',
+            onSale: '8.7',
+            cardType: 'Bird',
+            color: 'purple',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 165.svg',
+            admissionToken: 'G.O.O',
+            cardTitle: 'Swaggy Sea Lion',
+            onSale: '8.7',
+            cardType: 'Bird',
+            color: 'yellow',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 164.svg',
+            admissionToken: 'Lava',
+            cardTitle: 'Jolly Jack-O',
+            onSale: '8.7',
+            cardType: 'Bird',
+            color: 'red',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 163.svg',
+            admissionToken: 'Epic',
+            cardTitle: 'Meticulous Magpie',
+            onSale: '8.7',
+            cardType: 'Bird',
+            color: 'green',
+            msg: 'success'
+        },
+        {
+            cardImage: '/assets/images/Group 166.svg',
+            admissionToken: 'Diamond',
+            cardTitle: 'Level Header Lizar',
+            onSale: '8.7',
+            cardType: 'Bird',
+            color: 'darkgreen',
+            msg: 'success'
+        }
+    ]
+
+    const [cardData, setCardData] = useState({})
+
+
+    const clickHandler = (obj) => {
+        setCardData({...obj})
+    }
+
+    useEffect(()=>{
+        dispatch(latestPostCard(cardData, history))
+    },[cardData])
+    
+    
+
     return (
         <div className='latestposts-section'>
             <Container>
@@ -47,166 +160,28 @@ const LatestPosts = () => {
                             </div>
                         </div>
                         <Row className='floor-prices'>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3} >
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 172.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill' >Core</span>
-                                                <h3 className='pt-1 mb-0'>Sufficient Shrimp</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 170.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill pink' >Bubble Gum</span>
-                                                <h3 className='pt-1 mb-0'>Conviction Cockroach</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 171.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill brown' >Rare</span>
-                                                <h3 className='pt-1 mb-0'>Keen Kingfisher</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 169.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill yellow' >Gold</span>
-                                                <h3 className='pt-1 mb-0'>Dapper Dachshund</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 168.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill green' >Epic</span>
-                                                <h3 className='pt-1 mb-0'>Tolerant Tuna</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 167.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill purple' >Hologram</span>
-                                                <h3 className='pt-1 mb-0'>Bold As Fuck Bat</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 165.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill yellow' >G.O.O</span>
-                                                <h3 className='pt-1 mb-0'>Swaggy Sea Lion</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 164.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill red' >Lava</span>
-                                                <h3 className='pt-1 mb-0'>Jolly Jack-O</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 163.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill green' >Epic</span>
-                                                <h3 className='pt-1 mb-0'>Meticulous Magpie</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
-                            <Col md={6} className='custom-card' >
-                                <Link to='/postdetail'>
-                                    <Row className=''>
-                                        <Col md={3} sm={3} xs={3}>
-                                            <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src='assets/images/Group 166.svg' />
-                                        </Col>
-                                        <Col md={9} sm={9} xs={9}>
-                                            <div className="card-content">
-                                                <span className='category-pill darkgreen' >Diamond</span>
-                                                <h3 className='pt-1 mb-0'>Level Headed Lizard</h3>
-                                                <span className='value'>9.55 ($43,831.44)</span>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Link>
-                            </Col>
+
+                            {postCard.map((obj, ind) => (
+                                <Col md={6} className='custom-card' key={ind}>
+                                        <div >
+                                    <Link to='/' onClick={() => clickHandler(obj)}>
+                                        <Row className=''>
+                                            <Col md={3} sm={3} xs={3} >
+                                                <img style={{ width: '100%', boxShadow: '0px 3px 30px #6D1E07AB' }} src={obj.cardImage} value={obj.cardImage} />
+                                            </Col>
+                                            <Col md={9} sm={9} xs={9}>
+                                                <div className="card-content">
+                                                    <span className='category-pill' style={{ color: obj.color, border: `1px solid ${obj.color}` }} value={obj.admissionToken}>{obj.admissionToken}</span>
+                                                    <h3 className='pt-1 mb-0' name='cardTitle' value={obj.cardTitle}>{obj.cardTitle}</h3>
+                                                    <span className='value' value={obj.onSale}>{obj.onSale} ($43,831.44)</span>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Link>
+                                    </div>
+                                </Col>
+                            ))}
+
                         </Row>
                     </Col>
                 </Row>

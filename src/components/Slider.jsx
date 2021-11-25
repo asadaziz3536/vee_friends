@@ -2,9 +2,13 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Container, Row, Col, Image } from 'react-bootstrap'
+import { useSelector, useDispatch } from 'react-redux';
 
 
 const Slider = () => {
+
+    const dispatch = useDispatch()
+    const selector = useSelector(s => s)
 
     const responsive = {
         desktop: {
