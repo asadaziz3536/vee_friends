@@ -22,6 +22,12 @@ a {
     text-decoration: none !important;
     font-size: 12px !important;
 }
+button:active{
+    box-shadow: none !important;
+}
+button:focus{
+    box-shadow: none !important;
+}
 
 h1,
 h2,
@@ -43,7 +49,7 @@ p {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #0ad900, #67b938) !important;
+    background:#0ad900 !important;
     border-color: transparent !important;
 }
 
@@ -162,7 +168,6 @@ h6 {
     padding: 100px 0px;
     background: #000;
     color: #fff;
-    border-bottom: 4px solid rgb(240 240 240);
 }
 
 .hero-section p {
@@ -306,6 +311,10 @@ h6 {
     margin-top: -26px;
     padding-bottom: 70px;
 }
+.latestposts-section button:focus{
+ background: #0ad900;
+ border: 1px solid transparent;
+}
 
 .latestposts-section .card {
     border: none !important;
@@ -323,7 +332,7 @@ h6 {
 .latestposts-section .top-title-pill {
     background: #fff;
     color: #000;
-    border: 3px solid rgb(240 240 240);
+    border: 1px solid #ccc;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
     padding: 8px 40px;
