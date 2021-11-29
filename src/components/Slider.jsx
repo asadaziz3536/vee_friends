@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Container, Row, Col, Image } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux';
+import { latestPostCard, sliderCard } from '../actions/cardData/cardData';
+import { Link, useHistory } from 'react-router-dom';
 
 
 const Slider = () => {
 
     const dispatch = useDispatch()
     const selector = useSelector(s => s)
+    const history = useHistory()
 
     const responsive = {
         desktop: {
@@ -56,87 +59,148 @@ const Slider = () => {
     };
 
     const tokenArray = [
+
+        // {
+        //     cardImage: '/assets/images/Group 172.svg',
+        //     admissionToken: 'Core',
+        //     cardTitle: 'Sufficiant Shrimp',
+        //     onSale: '8.7',
+        //     cardType: 'INVERTEBRATE',
+        //     color: 'grey',
+        //     msg: 'success'
+        // },
+
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core',
-            titleImg: "/assets/images/Group 175.svg"
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         },
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core',
             titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         },
         {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         }, {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
 
         },
         {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         },
         {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         },
         {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         }, {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
 
         },
         {
-            titleImg: "/assets/images/Group 175.svg",
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             logo: "/assets/images/Group 173.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            titleImg: "/assets/images/Group 175.svg",
+            msg: 'success'
         },
         {
             cardImage: "/assets/images/Group 174.svg",
-            title: "Tough To Beat A Wor...",
-            logo: "/assets/images/Group 173.svg",
+            admissionToken: 'Core',
+            cardTitle: "Tough To Beat A Wor...",
+            onSale: '8.7',
+            cardType: 'INVERTEBRATE',
+
+            cardCode: '#03872 338 OF 555',
             titleImg: "/assets/images/Group 175.svg",
-            logoTitle: "JUST ART",
-            valueTitle: 'Core'
+            logo: "/assets/images/Group 173.svg",
+            msg: 'success'
         }
     ]
+
+
+    const [cardData, setCardData] = useState({})
+    const clickHandler = (obj) => {
+        setCardData(obj)
+    }
+
+    useEffect(() => {
+        dispatch(latestPostCard(cardData, history))
+    }, [cardData])
 
     return (
 
@@ -155,28 +219,31 @@ const Slider = () => {
                     containerClass="carousel-container"
                     arrows={true}
                     style={{ marginBottom: '20px' }}
-                // infinite={true}
-                // autoPlay={true}
+                    // infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={2800}
 
                 >
                     {/* <div className='card-wrapper'> */}
                     {tokenArray.map((obj, ind) => (
                         <Col className='card-wrapper' key={ind} >
-                            <Card style={{ borderRadius: '14px', marginRight: '20px', width: '11.75rem', height: '18.375rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }} className='col-12'>
-
-
-                                <Card.Img style={{
-                                    borderTopLeftRadius: '14px', borderTopRightRadius: '14px', paddingBottom: '30px',
-                                    backgroundColor: '#F8F8F8', height: '8.375rem'
-                                }} variant="top" src={obj.cardImage} />
-
-                                <Card.Body>
-                                    <Row style={{ alignItems: 'center', marginTop: '-36px' }}>
+                            <Card style={{ borderRadius: '14px', marginRight: '20px', width: '12.75rem', height: '18.375rem', display: 'flex', flexDirection: 'column' }}
+                                className='col-12'
+                                onClick={() => clickHandler(obj)}
+                            >
+                                <div className='slider-card-img'>
+                                    <Card.Img style={{
+                                        borderTopLeftRadius: '14px', borderTopRightRadius: '14px',
+                                        backgroundColor: '#F8F8F8', height: '9.375rem'
+                                    }} variant="top" src={obj.cardImage} />
+                                </div>
+                                <Card.Body style={{ padding: '0.5rem 0.5rem' }}>
+                                    <Row style={{ alignItems: 'center', marginTop: '-28px' }}>
 
                                         <Col className='col-8'>
                                             <div className='pill rounded-pill'
-                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background: 'white', marginTop:'-10px', padding: '6px', zIndex: '10' }}>
-                                                <span style={{ color: '#A7A7A7', fontFamily: 'Poppins-Bold' }}>#09396 13 OF 20</span>
+                                                style={{ boxShadow: '0px 3px 6px #00000029', fontSize: '10px', background: 'white', marginTop: '-10px', padding: '6px', zIndex: '10', width: '120%' }}>
+                                                <span style={{ color: '#A7A7A7', fontFamily: 'Poppins-Bold' }}>{obj.cardCode}</span>
                                             </div>
                                         </Col>
                                         <Col className='col-4'>
@@ -187,26 +254,29 @@ const Slider = () => {
                                             <Image src={obj.titleImg} style={{ width: "14.84px", height: "12.37px", borderRadius: "100%" }} alt="this img" />
                                         </Col>
                                         <Col className='col-10'>
-                                            <p style={{ fontSize: '10px', paddingLeft: '3px' }}>{obj.logoTitle}</p>
+                                            <p style={{ fontSize: '10px' }}>{obj.cardType}</p>
                                         </Col>
                                     </Row>
-                                    <Card.Title className='heading-font' style={{ fontSize: '14px' }}>{obj.title}</Card.Title>
+                                    <Card.Title className='heading-font' style={{ fontSize: '14px' }}>{obj.cardTitle}</Card.Title>
                                     <Row style={{ alignItems: 'center' }}>
 
                                         <Col>
-                                            <p style={{ fontSize: '10px' }}>{obj.valueTitle}</p>
+                                            <p style={{ fontSize: '10px' }}>{obj.admissionToken}</p>
                                         </Col>
                                     </Row>
 
+                                    <Row>
+                                        <span className='card-footer d-flex' style={{ justifyContent: 'space-between', marginTop: '6px' }}>
+
+                                            <span>
+                                                <p>Last Sale</p>
+                                            </span>
+                                            <div><p><span className='triple-equal-sign'>Ξ</span>10</p></div>
+                                        </span>
+                                    </Row>
 
                                 </Card.Body>
-                                <span className='card-footer d-flex' style={{ justifyContent: 'space-between' }}>
 
-                                    <span>
-                                        <p>Last Sale</p>
-                                    </span>
-                                    <div><p>10</p></div>
-                                </span>
 
                             </Card>
                         </Col>

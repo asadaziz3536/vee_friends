@@ -7,6 +7,7 @@ import Routes from './Routes';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Fragment } from 'react';
+// import './style/style.css'
 
 
 function App() {

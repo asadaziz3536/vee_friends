@@ -5,7 +5,7 @@ const Faqs = () => {
     return (
         <div className='faq-main-wrapper'>
             <Container className='faq-container'>
-                <Accordion className='accordion-wrapper' style={{ maxWidth: '1366px', margin: 'auto', }}>
+                <Accordion className='accordion-wrapper' style={{ maxWidth: '1366px', margin: 'auto' }}>
                     <h2 className='faq-header-font'>Frequently Asked Questions</h2>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header className='faq-same-heading'>What is VeeFriends?</Accordion.Header>

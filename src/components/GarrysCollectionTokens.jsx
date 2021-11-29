@@ -1,7 +1,11 @@
 import React from 'react'
 import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
 
 const GarrysCollectionTokens = () => {
+
+    const data = useSelector(s => s.tokenCard)
+    console.log(data)
 
     const tokenArray = [
         {
@@ -66,12 +70,13 @@ const GarrysCollectionTokens = () => {
                         <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>View all</span>
                     </Col>
                 </Row>
-                <hr style={{margin:'0.25rem 0px'}} />
+                
+                <hr className='card-header-line' />
 
                 <Row xs={1} md={4} className="g-4 card-wrapper py-5">
                     {tokenArray.map((obj, ind) => (
-                        <Col sm={4} xs={6} md={3} lg={3} key={ind} >
-                            <Card style={{ borderRadius: '3%' }}>
+                        <Col sm={6} xs={12} md={3} lg={3} key={ind} >
+                            <Card style={{ borderRadius: '12px' }}>
                                 <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', backgroundColor: '#F8F8F8' }} variant="top" src={obj.cardImage} />
                                 <Card.Body className='p-2'>
                                     <Card.Title className='heading-font text-center mb-0' style={{ fontSize: '14px', color: '#49E442', fontFamily: 'Poppins-Semibold' }}>{obj.title}</Card.Title>

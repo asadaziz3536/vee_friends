@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { Link , useHistory} from 'react-router-dom'
+import { tokenCard } from '../actions/cardData/cardData'
 
 const Tokens = () => {
+    const [selectedValue, setselectedValue] = useState('A')
+    console.log("🚀 ~ file: Tokens.jsx ~ line 7 ~ Tokens ~ selectedValue", selectedValue)
+
+    const history = useHistory()
+    const dispatch = useDispatch()
 
     const tokenArray = [
         {
@@ -95,31 +103,43 @@ const Tokens = () => {
         },
         {
             cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
+            title: "Bccountable Ant",
             logo: "/assets/images/Group 175.svg",
             logoTitle: "Keynote Koala",
             value: '40',
             valueTitle: 'TOTAL'
-        },
-        
+        }
     ]
+
+    const renderArray  = tokenArray.filter((obj,ind)=> obj.title[0] === selectedValue)
+
+    const [cardData, setcardData] = useState({})
+
+    const clickHandler = (obj) =>{
+        setcardData({ ...obj })
+    }
+
+    useEffect(()=>{
+        if(!cardData){
+        dispatch(tokenCard(cardData, history))
+    }
+    },[cardData])
 
     const navArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     return (
         <>
             <div className=''>
-
                 <div class="main-title-wrapper"><h2>Library</h2></div>
-                <Container className=''>
-                    <div className='token-main-container custom-contain-sm'>
+                <Container className='custom-contain-sm'>
+                    <div className='token-main-container'>
                     <Col className='card-header-container'>
-                        <Row className='card-quantity'>{tokenArray.length} Tokens</Row>
-                        <hr className='card-header-line' />
-                        <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
+                        <Row className='card-quantity'>{renderArray.length} Tokens</Row>
+                        <hr className='card-header-line pashtoclass' /> 
+                        <Row style={{ width: '90%', margin: '0 auto', justifyContent: 'center', display: 'flex', marginTop: '2rem' }}>
                             {navArray.map((obj, ind) => {
                                 return (
                                     <div key={ind} style={{ width: "fit-content" }}>
-                                        <Col className='alphabet-link' style={{ width: "fit-content" }}>{obj}</Col>
+                                        <Col className='alphabet-link' onClick={()=> setselectedValue(obj)} style={{ width: "fit-content", cursor: 'pointer' }}>{obj}</Col>
                                     </div>
                                 )
                             })}
@@ -128,10 +148,11 @@ const Tokens = () => {
                     <br />
                     
                     <Row xs={1} md={4} className="g-4 card-wrapper">
-                        {tokenArray.map((obj, ind) => (
+                        {renderArray.map((obj, ind)=> (
+                            
                             <Col sm={4} xs={6} md={3} lg={3} key={ind} >
-                                <Card style={{ borderRadius: '3%' }}>
-                                    <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', backgroundColor: '#F8F8F8' }} variant="top" src={obj.cardImage} />
+                                <Card style={{ borderRadius: '12px' }} onClick={()=> clickHandler(obj)}>
+                                    <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', height: '12rem', background: 'rgb(248, 248, 248)' }} variant="top" src={obj.cardImage} />
                                     <Card.Body>
 
                                         <Row style={{ alignItems: 'center' }}>
@@ -157,12 +178,13 @@ const Tokens = () => {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        ))}
+                            
+                            ))}
                     </Row>
                     
                     <br />
                     <Col className='my-4'>
-                        <Row style={{ width: '80%', margin: '0 auto', justifyContent: 'center', display: 'flex' }}>
+                        <Row style={{ width: '90%', margin: '0 auto', justifyContent: 'center', display: 'flex', marginBottom: '3rem' }}>
                             {navArray.map((obj, ind) => {
                                 return (
                                     <div key={ind} style={{ width: "fit-content" }}>

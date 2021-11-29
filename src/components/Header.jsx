@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import { NavLink, Link } from 'react-router-dom'
 import { useLocation } from "react-router-dom";
+import ConnectModal from './ConnectModal';
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
    //Javascript split method to get the name of the path in array
    const splitLocation = pathname.split("/");
 
-
+   const [modalShow, setModalShow] = useState(false);
 
     return (
 
@@ -39,10 +40,11 @@ const Header = () => {
                                 <Link  to='/garryscollection'>Gary's Collection</Link>
                             </Nav.Link>
                             <Nav.Link className={splitLocation[1] === "" ? "active" : ""} >
-                                <Link >Explore Friends</Link>
+                                <Link to='#'>Explore Friends</Link>
                             </Nav.Link>
-                            <Button href="#" className='custom-btn' style={{ boxShadow: '0px 3px 10px #00000073' }} >Connect Wallet</Button>
+                            <Button className='custom-btn' style={{ boxShadow: '0px 3px 10px #00000073' }} onClick={()=> setModalShow(true)}>Connect Wallet</Button>
                         </Nav>
+                        <ConnectModal show={modalShow} onHide={()=> setModalShow(false)}/>
 
                     </Navbar.Collapse>
                 </Container>

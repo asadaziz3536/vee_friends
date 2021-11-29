@@ -39,7 +39,7 @@ const TimelineNew = () => {
     }
 
     const [displayArray, setdisplayArray] = useState([''])
-    console.log("🚀 ~ file: TimelineNew.jsx ~ line 43 ~ TimelineNew ~ displayArray", displayArray)
+    console.log("🚀 ~ file: TimelineNew.jsx ~ line 43 ~ TimelineNew ~ displayArray", displayArray.length, mainArray.length)
 
     const addItems = () => {
         for (let index = displayArray.length; index < displayArray.length + 2; index++) {
@@ -48,6 +48,8 @@ const TimelineNew = () => {
 
         }
     }
+
+    const btns = 'Show more'
 
     return (
         <div className='timeline-wrapper'>
@@ -123,8 +125,16 @@ const TimelineNew = () => {
                 </div> */}
 
             <div className="btn-wrapper text-center">
-                <button className="btn btn-primary" onClick={() => addItems()}
-                    style={{ background: '#0AD900', border: '1px solid transparent', fontFamily: 'Poppins-Medium', borderRadius: '16px', padding: '9px 30px' }}>Show more</button>
+                {
+                    mainArray.length !== (displayArray.length * 2)
+                        ?
+                        <button className="btn btn-primary" onClick={() => addItems()}
+                            style={{ background: '#0AD900', border: '1px solid transparent', fontFamily: 'Poppins-Medium', borderRadius: '16px', padding: '9px 30px' }}>{btns}
+                        </button>
+                        : 
+                        null
+
+                }
             </div>
 
         </div>

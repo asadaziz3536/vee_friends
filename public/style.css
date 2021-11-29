@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Poppins-Medium";
-    src: url(assets/fonts/Poppins-Regular.ttf);
+    src: url(assets/fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
@@ -20,6 +20,7 @@
 
 a {
     text-decoration: none !important;
+    font-size: 12px !important;
 }
 
 h1,
@@ -29,16 +30,50 @@ h4,
 h5,
 h6 {
     font-family: "Poppins-Bold";
+    font-size: 16px;
 }
 
 p {
     font-family: "Poppins-Regular";
-    font-size: 11px;
+    font-size: 12px;
+}
+
+.card {
+    border: 2px solid #f0f0f0 !important;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #67b63c, #67b938) !important;
+    background: linear-gradient(to right, #0ad900, #67b938) !important;
     border-color: transparent !important;
+}
+
+
+/* .btn-primary:focus {
+    background: linear-gradient(to right, #0ad900, #67b938) !important;
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+.btn-primary:active {
+    background: linear-gradient(to right, #0ad900, #67b938) !important;
+    border-color: transparent !important;
+    outline: none !important;
+} */
+
+.triple-equal-sign {
+    margin: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+hr {
+    border: none;
+}
+
+.card-header-line {
+    height: 3px !important;
+    background: rgb(219 219 219);
+    margin-top: 0.2rem;
 }
 
 
@@ -57,8 +92,8 @@ p {
 }
 
 .custom-nav .navbar-nav .nav-link a:hover {
-    color: #9ace00;
-    text-shadow: 0px 0px 3px 10px #9ace00;
+    color: #0ad900;
+    text-shadow: 0px 0px 3px 10px #5fc328;
 }
 
 .custom-btn {
@@ -110,7 +145,7 @@ h6 {
 .custom-nav a {
     font-family: "Poppins-Bold";
     color: #000;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .theme-accent {
@@ -127,6 +162,7 @@ h6 {
     padding: 100px 0px;
     background: #000;
     color: #fff;
+    border-bottom: 4px solid rgb(240 240 240);
 }
 
 .hero-section p {
@@ -134,7 +170,7 @@ h6 {
 }
 
 .hero-section h1 {
-    color: #FF7F00;
+    color: #ff7f00;
     font-size: 43px;
 }
 
@@ -163,7 +199,7 @@ h6 {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .8), transparent);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
 }
@@ -227,7 +263,7 @@ h6 {
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #9ACE00;
+    background: #9ace00;
     border-radius: 8px;
 }
 
@@ -235,26 +271,26 @@ h6 {
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #9ACE00;
+    background: #9ace00;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .hero-section img {
         width: 75px;
     }
     .hero-section .flip-card {
         width: 70px;
-        height: 100px
+        height: 100px;
     }
 }
 
-@media screen and (min-width:840px) and (max-width:1024px) {
+@media screen and (min-width: 840px) and (max-width: 1024px) {
     .hero-section .flip-card {
         width: 86px;
     }
 }
 
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .hero-section img {
         display: none;
     }
@@ -267,22 +303,26 @@ h6 {
 /* Latest Posts */
 
 .latestposts-section {
-    margin-top: -30px;
+    margin-top: -26px;
     padding-bottom: 70px;
 }
 
+.latestposts-section .blog-card-text {
+    color: #a1a1a1;
+}
+
 .latestposts-section h3 {
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
 }
 
 .latestposts-section .top-title-pill {
     background: #fff;
     color: #000;
-    border: 1px solid transparent;
+    border: 3px solid rgb(240 240 240);
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
-    padding: 20px 40px;
+    padding: 8px 40px;
     font-family: "Poppins-Bold";
 }
 
@@ -290,35 +330,46 @@ h6 {
     margin: auto;
 }
 
+.custom-card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .category-pill {
     border: 1px solid #dcdcdc;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: "Poppins-Bold";
     color: #dcdcdc;
-    padding: 2px 6px;
-    font-size: 11px;
+    padding: 2px 8px;
+    font-size: 16px;
 }
 
 .floor-prices {
     padding-top: 43px;
 }
 
-.floor-prices .value {
+.floor-prices .card-content .value {
     color: #989696;
     font-family: "Poppins-Medium";
-    font-size: 11px;
+    font-size: 14px;
+    padding-top: 0.5rem;
 }
 
 .floor-prices .custom-card img {
-    max-width: 64px;
+    max-width: 86px;
+}
+
+.floor-prices .custom-card:hover h3 {
+    color: #0ad900;
 }
 
 .latestposts-section .custom-card {
-    margin-bottom: 49px;
+    margin-bottom: 24px;
 }
 
 .latestposts-section .card-title {
-    font-size: 13px;
+    font-size: 16px;
     font-family: "Poppins-Bold";
 }
 
@@ -329,14 +380,19 @@ h6 {
     text-decoration: none;
 }
 
-.latestposts-section .card-main-title {
-    font-size: 15px;
-    font-family: 'Poppins-Bold';
-    display: flex;
-    align-items: stretch;
+.latestposts-section .blog-section-same:hover .card-link {
+    color: #0ad900;
 }
 
-.category-pill.pink {
+.latestposts-section .card-main-title {
+    font-size: 16px;
+    font-family: "Poppins-Bold";
+    display: flex;
+    align-items: center;
+}
+
+
+/* .category-pill.pink {
     border-color: #f7c8d1;
     color: #f7c8d1;
 }
@@ -369,7 +425,7 @@ h6 {
 .category-pill.darkgreen {
     border-color: #008080;
     color: #008080;
-}
+} */
 
 @media screen and (min-width: 1200px) {
     .latestposts-section .card {
@@ -377,7 +433,7 @@ h6 {
     }
 }
 
-@media screen and (max-width:575.98px) {
+@media screen and (max-width: 575.98px) {
     .latestposts-section .top-title-pill:first-child {
         margin-top: 6px;
     }
@@ -396,7 +452,7 @@ h6 {
 /* TimeLine Section  */
 
 .timeline-wrapper {
-    padding: 90px 0px;
+    padding: 30px 0px;
 }
 
 .timeline {
@@ -408,10 +464,10 @@ h6 {
 }
 
 .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
-    background: #C3C3C3;
+    background: #c3c3c3;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -434,14 +490,14 @@ h6 {
 }
 
 .timeline-container::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 25px;
     height: 25px;
     top: calc(50% - 8px);
     right: -12px;
     background: #ffffff;
-    border: 2px solid #C3C3C3;
+    border: 2px solid #c3c3c3;
     border-radius: 16px;
     z-index: 1;
 }
@@ -461,7 +517,7 @@ h6 {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    color: #006E51;
+    color: #006e51;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -473,7 +529,7 @@ h6 {
 }
 
 .timeline-container .announcement {
-    background: #0AD900;
+    background: #0ad900;
     border-radius: 16px;
     margin-top: -20px;
     color: #fff;
@@ -482,19 +538,19 @@ h6 {
 
 .timeline-container .date .announcement span {
     font-size: 8px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .timeline-container.filled::after {
-    background: #C3C3C3;
+    background: #c3c3c3;
 }
 
 .timeline-container.active::after {
-    background: #0AD900;
+    background: #0ad900;
 }
 
 .timeline-container .date span {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 17px;
     line-height: 21px;
 }
@@ -504,7 +560,7 @@ h6 {
 }
 
 .timeline-container .date .year span {
-    color: #948F8F;
+    color: #948f8f;
 }
 
 .timeline-container.left .date {
@@ -551,10 +607,10 @@ h6 {
 
 @media screen and (min-width: 768px) {
     .timeline-container.left .content {
-        transform: rotate( 358deg);
+        transform: rotate(358deg);
     }
     .timeline-container.right .content {
-        transform: rotate( 2deg);
+        transform: rotate(2deg);
         margin-top: 40px;
     }
     .timeline-container.left .content:not(:first-child) {
@@ -593,7 +649,7 @@ h6 {
     .timeline-container.left::before,
     .timeline-container.right::before {
         left: 100px;
-        border-color: transparent #006E51 transparent transparent;
+        border-color: transparent #006e51 transparent transparent;
     }
     .timeline-container.left .date,
     .timeline-container.right .date {
@@ -656,6 +712,10 @@ h6 {
     font-family: "Poppins-Regular";
 }
 
+.faq-main-wrapper .accordion-button:hover {
+    color: #0ad900;
+}
+
 .faq-same-body {
     font-family: "Poppins-Regular";
     font-size: 15px;
@@ -666,7 +726,7 @@ h6 {
     opacity: 1;
 }
 
-.faq-main-wrapper .accordion-button:not(.collapsed)::after{
+.faq-main-wrapper .accordion-button:not(.collapsed)::after {
     flex-shrink: 0;
     width: 1.25rem;
     height: 1.25rem;
@@ -675,18 +735,16 @@ h6 {
     background-image: url(assets/images/6137502_arrow_bottom_chevron_direction_navigation_icon.svg);
     background-repeat: no-repeat;
     background-size: 1.5rem;
-    transition: transform .2s ease-in-out;
-    fill: #0AD900;
-
+    transition: transform 0.2s ease-in-out;
+    fill: #0ad900;
 }
-
 
 .accordion-wrapper .accordion-button,
 .accordion-wrapper .accordion-item {
     background-color: transparent;
 }
 
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .faq-main-wrapper {
         padding: 40px 0px;
     }
@@ -716,18 +774,18 @@ h6 {
 
 .postdetail-feature a {
     box-shadow: 0px 3px 6px #00000029;
-    max-width: 222px;
+    /* max-width: 222px; */
     display: block;
     border-radius: 6px;
 }
 
 .admission-redeem {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     max-width: 150px;
     padding: 7px 15px;
     border-radius: 6px;
     font-size: 12px;
-    font-family: 'Poppins-Medium';
+    font-family: "Poppins-Medium";
 }
 
 .edition {
@@ -735,12 +793,12 @@ h6 {
 }
 
 .edition span {
-    font-family: 'Poppins-Bold';
-    color: #A1A1A1;
+    font-family: "Poppins-Bold";
+    color: #a1a1a1;
 }
 
 .postdetail-feature .description {
-    color: #A1A1A1;
+    color: #a1a1a1;
 }
 
 .postdetail-feature h3 {
@@ -748,21 +806,23 @@ h6 {
 }
 
 .postdetail-feature .description p:first-child {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
 .postdetail-feature .description p:last-child {
-    font-family: 'Poppins-Medium';
+    font-family: "Poppins-Medium";
 }
 
 .postdetail-feature .details p {
     color: #000;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Regular";
     font-size: 13px;
 }
 
 .postdetail-feature .date {
     color: #000;
+    font-size: 20px;
+    font-family: "Poppins-Bold";
 }
 
 .postdetail-feature a:hover {
@@ -781,16 +841,16 @@ h6 {
 
 .main-title-wrapper h2 {
     background: #fff;
-    box-shadow: 0px 3px 7px #ccc;
+    /* box-shadow: 0px 3px 7px #ccc; */
     border-radius: 34px;
     max-width: 281px;
     text-align: center;
     margin: auto;
     z-index: 20;
-    border: 1px solid #707070;
+    border: 3px solid rgb(245 245 245);
     margin: 32px auto;
     font-size: 16px;
-    padding: 6px;
+    padding: 8px;
 }
 
 .main-title-wrapper {
@@ -807,9 +867,9 @@ h6 {
     top: 51%;
     overflow: hidden;
     width: 50%;
-    height: 1px;
-    content: '\a0';
-    background-color: #707070;
+    height: 3px;
+    content: "\a0";
+    background: rgb(245 245 245);
     z-index: -1;
 }
 
@@ -829,7 +889,7 @@ h6 {
 .recent-activity a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Poppins-Regular';
+    font-family: "Poppins-Regular";
 }
 
 .table-container {
@@ -851,10 +911,10 @@ h6 {
 }
 
 .custom-table .table-head {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
 }
 
-@media screen and (min-width:767.98px) and (max-width:991.98px) {
+@media screen and (min-width: 767.98px) and (max-width: 991.98px) {
     .table-container {
         margin: 20px;
     }
@@ -863,7 +923,7 @@ h6 {
     }
 }
 
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .table-container {
         margin: 20px;
     }
@@ -891,7 +951,7 @@ h6 {
     }
 }
 
-@media screen and (max-width:575.98px) {
+@media screen and (max-width: 575.98px) {
     .table-wrapper {
         width: 700px;
     }
@@ -915,7 +975,7 @@ h6 {
     justify-content: center;
 }
 
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .collection-detail video {
         width: 100%;
     }
@@ -946,15 +1006,15 @@ h6 {
 }
 
 .collections-feature-wrap .total {
-    font-family: 'Poppins-Semibold';
+    font-family: "Poppins-Semibold";
 }
 
 .custom-contain-sm {
-    max-width: 800px !important;
+    max-width: 80% !important;
     margin: auto;
 }
 
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .collections-feature-wrap .stats-pannel .col {
         padding: 8px;
     }
@@ -983,7 +1043,7 @@ h6 {
     text-decoration: none;
     color: #ffffff;
     font-size: 12px;
-    font-family: 'poppins-regular';
+    font-family: "poppins-regular";
 }
 
 .footer p {
@@ -1001,14 +1061,14 @@ h6 {
 }
 
 .footer .input-wrapper input::placeholder {
-    font-family: 'poppins-regular';
+    font-family: "poppins-regular";
 }
 
 .footer .input-wrapper .btn {
     position: absolute;
     top: 3px;
     right: 5px;
-    background-color: #0AD900;
+    background-color: #0ad900;
     box-shadow: none;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -1020,7 +1080,7 @@ h6 {
 }
 
 .footer button {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 13px;
 }
 
@@ -1066,7 +1126,7 @@ h6 {
 }
 
 .timeline-wrapper .css-u0xttt-TimelineContentSubTitle {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 440px) {
@@ -1074,7 +1134,7 @@ h6 {
         max-width: 93px !important;
     }
     .css-m1ajd4-TimelineCardTitle {
-        font-size: 0.80rem !important;
+        font-size: 0.8rem !important;
     }
     .css-8v2xrm-MediaDetailsWrapper {
         padding-left: 8px !important;
@@ -1103,7 +1163,7 @@ h6 {
 }
 
 .timeline-wrapper .css-p3xmy4-VerticalCircleWrapper::after {
-    background: #C3C3C3;
+    background: #c3c3c3;
 }
 
 .timeline-wrapper .css-1ilps6c-Circle {
@@ -1114,12 +1174,6 @@ h6 {
 
 .timeline-wrapper .css-1ilps6c-Circle:not(.using-icon) {
     background: white;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 425px) {
-    .timeline-wrapper Chrono {
-        mode: "VERTICAL";
-    }
 }
 
 
@@ -1135,14 +1189,8 @@ h6 {
 
 .card-wrapper .card {
     word-wrap: unset;
-    /* width: 11.063rem;
-    height: 15.75rem; */
+    cursor: pointer;
 }
-
-
-/* .card-wrapper .card-img-top {
-    height: 9.75rem;
-} */
 
 .card-wrapper p {
     font-family: "Poppins-Bold";
@@ -1154,20 +1202,16 @@ h6 {
     font-size: 18px;
 }
 
-.card-header-container .card-header-line {
-    border: 1px solid #707070;
-    margin-top: 0.2rem;
-}
-
 .card-header-container .card-quantity {
     margin-left: 0px;
-    font-family: "Poppins-SemiBold";
+    font-family: "Poppins-Bold";
     font-size: 18px;
 }
 
 .alphabet-link {
-    font-family: "Poppins-SemiBold";
+    font-family: "Poppins-Bold";
     font-size: 12px;
+    /* padding: 0px auto; */
 }
 
 .screen-header {
@@ -1215,6 +1259,16 @@ h6 {
     border: 1px solid grey;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
+    border-top: none;
+}
+
+.card-wrapper .slider-card-img {
+    background: #F8F8F8;
+    padding-bottom: 1rem;
+}
+
+.card-wrapper .card {
+    border: 3px solid rgba(170, 170, 170, .125);
 }
 
 .card-wrapper .card-footer p {
@@ -1227,12 +1281,74 @@ h6 {
 
 /* End Footer */
 
-
-
-
-.active a{
-    color: #9ace00 !important;
-    text-shadow: 0px 2px 10px #9ace00;
+.active a {
+    color: #0ad900 !important;
+    text-shadow: 0px 2px 10px #5fc328;
 }
 
 
+/* Modal Start */
+
+.connect-modal .modal-dialog {
+    max-width: 722px;
+}
+
+.connect-modal .modal-content {
+    border-radius: 12px;
+}
+
+.connect-modal .modal-body {
+    padding: 0px;
+    opacity: 1;
+}
+
+.connect-modal .same-card-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-modal .card-wrapper {
+    background-color: white;
+    padding: 24px;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 1px solid rgba(195, 195, 195, 0.14);
+    border-radius: 12px;
+}
+
+.connect-modal .card-wrapper:hover {
+    background: #f0f0f0;
+}
+
+.connect-modal .same-card-style h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0 !important;
+    font-family: "Poppins-Semibold";
+    font-size: 24px !important;
+}
+
+.connect-modal .same-card-style img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.connect-modal .same-card-style p {
+    font-size: 18px;
+    color: rgb(169, 169, 188);
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .connect-modal .card-wrapper {
+        border-bottom: 1px solid rgba(195, 195, 195, 0.14);
+        border-radius: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+}
+
+
+/* end of Modal */
