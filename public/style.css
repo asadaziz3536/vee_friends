@@ -307,6 +307,10 @@ h6 {
     padding-bottom: 70px;
 }
 
+.latestposts-section .card {
+    border: none !important;
+}
+
 .latestposts-section .blog-card-text {
     color: #a1a1a1;
 }

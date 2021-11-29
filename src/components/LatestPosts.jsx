@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
@@ -104,18 +104,9 @@ const LatestPosts = () => {
         }
     ]
 
-    const [cardData, setCardData] = useState({})
-
-
-    const clickHandler = (obj) => {
-        setCardData({ ...obj })
+    const clickHandler = (obj) =>{
+        dispatch(latestPostCard(obj, history))
     }
-
-    useEffect(() => {
-        dispatch(latestPostCard(cardData, history))
-    }, [cardData])
-
-
 
     return (
         <div className='latestposts-section'>
@@ -125,8 +116,8 @@ const LatestPosts = () => {
                         <Button className="btn top-title-pill d-flex mx-auto">
                             <span>From The Blog</span>
                         </Button>
-                        <Card style={{ marginTop: '15px', boxShadow: '0px 2px 6px 0px #bbbbbb', border: 'none', borderRadius: '10px', minWidth: '90%' }}>
-                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+                        <Card style={{ marginTop: '15px', boxShadow: '0px 2px 6px 0px #bbbbbb', borderRadius: '10px', minWidth: '90%' }}>
+                            
                             <Card.Body>
                                 <div className='blog-section-same'>
                                 <Card.Title className='card-main-title'><img className='me-2' src='assets/images/100.png'
@@ -170,8 +161,8 @@ const LatestPosts = () => {
                             {postCard.map((obj, ind) => (
                                 <Col md={6} className='custom-card' key={ind}>
 
-                                    <Link to='/' onClick={() => clickHandler(obj)}>
-                                        <Row className=''>
+                                
+                                        <Row className='' onClick={()=> clickHandler(obj)}>
                                             <Col md={4} sm={4} xs={4} >
                                                 <img style={{ width: '100%', boxShadow: `0px 3px 20px ${obj.color ? obj.color : '#6D1E07AB'}`, borderRadius: '6px' }} src={obj.cardImage} value={obj.cardImage} />
                                             </Col>
@@ -183,7 +174,7 @@ const LatestPosts = () => {
                                                 </div>
                                             </Col>
                                         </Row>
-                                    </Link>
+                                    
 
                                     <div>
                                         <hr style={{ width:'100%', height: '4px' , background: 'rgb(221 221 221)', marginTop: '1.3rem'}}/>

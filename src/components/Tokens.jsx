@@ -113,17 +113,10 @@ const Tokens = () => {
 
     const renderArray  = tokenArray.filter((obj,ind)=> obj.title[0] === selectedValue)
 
-    const [cardData, setcardData] = useState({})
-
     const clickHandler = (obj) =>{
-        setcardData({ ...obj })
+        dispatch(tokenCard(obj, history))
     }
 
-    useEffect(()=>{
-        if(!cardData){
-        dispatch(tokenCard(cardData, history))
-    }
-    },[cardData])
 
     const navArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     return (

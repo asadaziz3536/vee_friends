@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux'
 
 const GarrysCollectionTokens = () => {
 
-    const data = useSelector(s => s.tokenCard)
-    console.log(data)
+    const data = useSelector(s => s.cardReducer)
+    console.log(data.tokenCard)
 
     const tokenArray = [
         {

@@ -11,6 +11,13 @@ const PostDetailFeature = () => {
 
     const data = useSelector(s => s.cardReducer)
     const { admissionToken, cardImage, cardTitle, cardType, color, onSale, logo, titleImg, cardCode } = data.latestCard
+
+    // ((data)=>{
+    //     const { admissionToken, cardImage, cardTitle, cardType, color, onSale, logo, titleImg, cardCode } = data.sliderCard
+    // })
+
+    
+    
     console.log(admissionToken)
     return (
         <div className='postdetail-feature'>

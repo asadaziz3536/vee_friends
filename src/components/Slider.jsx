@@ -192,15 +192,9 @@ const Slider = () => {
         }
     ]
 
-
-    const [cardData, setCardData] = useState({})
     const clickHandler = (obj) => {
-        setCardData(obj)
+        dispatch(latestPostCard(obj, history))
     }
-
-    useEffect(() => {
-        dispatch(latestPostCard(cardData, history))
-    }, [cardData])
 
     return (
 
