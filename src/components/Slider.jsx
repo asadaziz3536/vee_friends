@@ -1,196 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Card, Container, Row, Col, Image } from 'react-bootstrap'
+import { Card, Row, Col, Image } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux';
-import { latestPostCard, sliderCard } from '../actions/cardData/cardData';
-import { Link, useHistory } from 'react-router-dom';
+import { latestPostCard } from '../actions/cardData/cardData';
+import { useHistory } from 'react-router-dom';
 
 
 const Slider = () => {
 
     const dispatch = useDispatch()
-    const selector = useSelector(s => s)
+    const selector = useSelector(s => s.cardReducer)
+    const { sliderCardArray } = selector
     const history = useHistory()
 
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1215 },
-            items: 6,
-            slidesToSlide: 3,
-            marginRight: '2px' // optional, default to 1.
+            items: 6.2,
         },
         laptop: {
             breakpoint: { max: 1214, min: 1024 },
             items: 5,
-            slidesToSlide: 3,
-            marginRight: '2px'
         },
         tablet: {
             breakpoint: { max: 1024, min: 800 },
             items: 4.6,
-            slidesToSlide: 2, // optional, default to 1.
-            marginRight: '2px'
         },
         mobile: {
             breakpoint: { max: 800, min: 710 },
-            items: 3.5,
-            slidesToSlide: 1,
-            marginRight: '2px' // optional, default to 1.
+            items: 3.4,
         },
         largeMobile: {
             breakpoint: { max: 709, min: 614 },
             items: 3,
-            slidesToSlide: 1
         },
         smallMobile: {
             breakpoint: { max: 613, min: 425 },
-            items: 2.5,
-            slidesToSlide: 1
-        },
-        extraSmallMobile: {
-            breakpoint: { max: 613, min: 425 },
-            items: 2,
+            items: 1.8,
         },
         doubleExtraSmallMobile: {
             breakpoint: { max: 424, min: 375 },
-            items: 1.7,
+            items: 1.6,
         }
     };
-
-    const tokenArray = [
-
-        // {
-        //     cardImage: '/assets/images/Group 172.svg',
-        //     admissionToken: 'Core',
-        //     cardTitle: 'Sufficiant Shrimp',
-        //     onSale: '8.7',
-        //     cardType: 'INVERTEBRATE',
-        //     color: 'grey',
-        //     msg: 'success'
-        // },
-
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        }, {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        }, {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            logo: "/assets/images/Group 173.svg",
-            titleImg: "/assets/images/Group 175.svg",
-            msg: 'success'
-        },
-        {
-            cardImage: "/assets/images/Group 174.svg",
-            admissionToken: 'Core',
-            cardTitle: "Tough To Beat A Wor...",
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-
-            cardCode: '#03872 338 OF 555',
-            titleImg: "/assets/images/Group 175.svg",
-            logo: "/assets/images/Group 173.svg",
-            msg: 'success'
-        }
-    ]
 
     const clickHandler = (obj) => {
         dispatch(latestPostCard(obj, history))
@@ -213,14 +66,14 @@ const Slider = () => {
                     containerClass="carousel-container"
                     arrows={true}
                     style={{ marginBottom: '20px' }}
-                    // infinite={true}
+                    infinite={true}
                     autoPlay={true}
-                    autoPlaySpeed={2800}
-
+                    autoPlaySpeed={2500}
+                    customTransition='transform 1000ms ease-in'
                 >
-                    {/* <div className='card-wrapper'> */}
-                    {tokenArray.map((obj, ind) => (
-                        <Col className='card-wrapper' key={ind} >
+
+                    {sliderCardArray.map((obj, ind) => (
+                        <Col key={ind} className='card-wrapper' key={ind} >
                             <Card style={{ borderRadius: '14px', marginRight: '20px', width: '12.75rem', height: '18.375rem', display: 'flex', flexDirection: 'column' }}
                                 className='col-12'
                                 onClick={() => clickHandler(obj)}
@@ -262,7 +115,8 @@ const Slider = () => {
                                     <Row>
                                         <span className='card-footer d-flex' style={{ justifyContent: 'space-between', marginTop: '6px' }}>
 
-                                            <span>
+                                            <span className='d-flex'>
+                                                <i className="far fa-tag fa-flip-horizontal tag-icon" style={{ color: 'white' }}></i>
                                                 <p>Last Sale</p>
                                             </span>
                                             <div><p><span className='triple-equal-sign'>Ξ</span>10</p></div>

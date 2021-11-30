@@ -2,8 +2,9 @@
 
 import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { latestPostCard } from '../actions/cardData/cardData'
 
 
@@ -11,98 +12,9 @@ const LatestPosts = () => {
 
     const history = useHistory()
     const dispatch = useDispatch()
-    const postCard = [
-        {
-            cardImage: '/assets/images/Group 172.svg',
-            admissionToken: 'Core',
-            cardTitle: 'Sufficiant Shrimp',
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-            color: 'grey',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 170.svg',
-            admissionToken: 'Bubble Gum',
-            cardTitle: 'Conviction Cockroach',
-            onSale: '8.7',
-            cardType: 'INVERTEBRATE',
-            color: 'pink',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 171.svg',
-            admissionToken: 'Rare',
-            cardTitle: 'Keen Kingfisher',
-            onSale: '8.7',
-            cardType: 'BIRD',
-            color: 'brown',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 169.svg',
-            admissionToken: 'Gold',
-            cardTitle: 'Dapper Dachshund',
-            onSale: '8.7',
-            cardType: 'DOG',
-            color: 'yellow',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 168.svg',
-            admissionToken: 'Epic',
-            cardTitle: 'Tolerant Tuna',
-            onSale: '8.7',
-            cardType: 'FISH',
-            color: 'green',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 167.svg',
-            admissionToken: 'Hologram',
-            cardTitle: 'Bold As Fuck Bat',
-            onSale: '8.7',
-            cardType: 'Bird',
-            color: 'purple',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 165.svg',
-            admissionToken: 'G.O.O',
-            cardTitle: 'Swaggy Sea Lion',
-            onSale: '8.7',
-            cardType: 'Bird',
-            color: 'yellow',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 164.svg',
-            admissionToken: 'Lava',
-            cardTitle: 'Jolly Jack-O',
-            onSale: '8.7',
-            cardType: 'Bird',
-            color: 'red',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 163.svg',
-            admissionToken: 'Epic',
-            cardTitle: 'Meticulous Magpie',
-            onSale: '8.7',
-            cardType: 'Bird',
-            color: 'green',
-            msg: 'success'
-        },
-        {
-            cardImage: '/assets/images/Group 166.svg',
-            admissionToken: 'Diamond',
-            cardTitle: 'Level Header Lizar',
-            onSale: '8.7',
-            cardType: 'Bird',
-            color: 'darkgreen',
-            msg: 'success'
-        }
-    ]
+    const selector = useSelector(s => s.cardReducer)
+    const {latestCardArray} = selector
+    console.log(latestCardArray)
 
     const clickHandler = (obj) =>{
         dispatch(latestPostCard(obj, history))
@@ -158,7 +70,7 @@ const LatestPosts = () => {
                         </div>
                         <Row className='floor-prices'>
 
-                            {postCard.map((obj, ind) => (
+                            {latestCardArray.map((obj, ind) => (
                                 <Col md={6} className='custom-card' key={ind}>
 
                                 

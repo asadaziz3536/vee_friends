@@ -35,14 +35,16 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto align-items-lg-center">
-                            <Nav.Link className={splitLocation[1] === "library" ? "active" : ""}><Link to='/library'>library</Link></Nav.Link>
+                            <Nav.Link className={splitLocation[1] === "library" ? "active" : ""}><Link to='/library'>Library</Link></Nav.Link>
                             <Nav.Link className={splitLocation[1] === "garryscollection" ? "active" : ""}>
                                 <Link  to='/garryscollection'>Gary's Collection</Link>
                             </Nav.Link>
                             <Nav.Link className={splitLocation[1] === "" ? "active" : ""} >
                                 <Link to='#'>Explore Friends</Link>
                             </Nav.Link>
+                            <Nav.Link>
                             <Button className='custom-btn' style={{ boxShadow: '0px 3px 10px #00000073' }} onClick={()=> setModalShow(true)}>Connect Wallet</Button>
+                            </Nav.Link>
                         </Nav>
                         <ConnectModal show={modalShow} onHide={()=> setModalShow(false)}/>
 

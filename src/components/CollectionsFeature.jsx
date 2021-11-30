@@ -16,7 +16,7 @@ const CollectionsFeature = () => {
                     <Row>
                         <Col sm={12} md={12} lg={6} className='text-center'>
                             <Tilt style={{height: '100%'}}>
-                                <img src={cardImage ? cardImage : "assets/images/Group 178.svg"} alt="" style={{height: '100%'}}/>
+                                <img src={cardImage ? cardImage : "assets/images/Group 178.svg"} alt="" style={{height: '24vmax'}}/>
                             </Tilt>
                         </Col>
                         <Col sm={12} md={12} lg={6}>

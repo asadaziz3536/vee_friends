@@ -7,18 +7,11 @@ import { useSelector } from 'react-redux';
 
 
 const PostDetailFeature = () => {
-    
 
-    const data = useSelector(s => s.cardReducer)
-    const { admissionToken, cardImage, cardTitle, cardType, color, onSale, logo, titleImg, cardCode } = data.latestCard
+    const selector = useSelector(s => s.cardReducer)
+    const { admissionToken, cardImage, cardTitle, cardType, color, onSale, logo, titleImg, cardCode } = selector.latestCard
 
-    // ((data)=>{
-    //     const { admissionToken, cardImage, cardTitle, cardType, color, onSale, logo, titleImg, cardCode } = data.sliderCard
-    // })
 
-    
-    
-    console.log(admissionToken)
     return (
         <div className='postdetail-feature'>
             <Container>
@@ -46,23 +39,23 @@ const PostDetailFeature = () => {
                         </div>
                         <Row>
                             <Col className='my-4 my-sm-4 my-md-4' md={6}>
-                                <Link>
+                                <Link to='#'>
                                     <img style={{ width: '100%' }} src="assets/images/etherscan-badge-white.png" alt="" />
                                 </Link>
                             </Col>
                             <Col className='my-0 mb-4 mb-sm-4 my-sm-0 my-md-4' md={6}>
-                                <Link>
+                                <Link to='#'>
                                     <img style={{ width: '100%' }} src="assets/images/opeansea-badge-white.png" alt="" />
                                 </Link>
                             </Col>
                             <Col>
                                 <div className='d-flex justify-content-between' style={{ borderRadius: '9px', padding: '18px', alignItems: 'center', boxShadow: '0px 3px 6px #00000029' }}>
                                     <div>
-                                        <div> <img src="assets/images/last.svg" alt="" /> <span style={{ fontFamily: 'Poppins-Bold', color: '#A1A1A1' }}>Last Sale <span className='triple-equal-sign' >Ξ</span> <span className='date'>11</span></span></div>
+                                        <div> <i className="far fa-tag fa-flip-horizontal tag-icon" ></i> <span style={{ fontFamily: 'Poppins-Bold', color: '#A1A1A1' }}>Last Sale <span className='triple-equal-sign' >Ξ</span> <span className='date'>11</span></span></div>
                                     </div>
                                     <div className='d-flex'>
                                         <div>
-                                            <img src={logo ? logo : '/assets/images/bull.png'} alt="" style={{ width: '40px', borderRadius: '50%' }} />
+                                            <img src={logo ? logo : '/assets/images/bull.png'} alt="" style={{ width: '4rem', borderRadius: '50%' }} />
                                         </div>
                                         <div>
                                             <span className='d-block'>*e*</span>

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Card, Row, Col, Container, Image } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { Link , useHistory} from 'react-router-dom'
+import { useHistory} from 'react-router-dom'
 import { tokenCard } from '../actions/cardData/cardData'
 
 const Tokens = () => {
@@ -10,108 +11,10 @@ const Tokens = () => {
 
     const history = useHistory()
     const dispatch = useDispatch()
+    const selector = useSelector(s => s.cardReducer)
+    const {libraryTokenArray} = selector
 
-    const tokenArray = [
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '30',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Accountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 185.svg",
-            title: "Bccountable Ant",
-            logo: "/assets/images/Group 175.svg",
-            logoTitle: "Keynote Koala",
-            value: '40',
-            valueTitle: 'TOTAL'
-        }
-    ]
-
-    const renderArray  = tokenArray.filter((obj,ind)=> obj.title[0] === selectedValue)
+    const renderArray  = libraryTokenArray.filter((obj,ind)=> obj.cardTitle[0] === selectedValue)
 
     const clickHandler = (obj) =>{
         dispatch(tokenCard(obj, history))
@@ -143,7 +46,7 @@ const Tokens = () => {
                     <Row xs={1} md={4} className="g-4 card-wrapper">
                         {renderArray.map((obj, ind)=> (
                             
-                            <Col sm={4} xs={6} md={3} lg={3} key={ind} >
+                            <Col className='custom-card-container' sm={6} xs={12} md={4} lg={3} key={ind} >
                                 <Card style={{ borderRadius: '12px' }} onClick={()=> clickHandler(obj)}>
                                     <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', height: '12rem', background: 'rgb(248, 248, 248)' }} variant="top" src={obj.cardImage} />
                                     <Card.Body>
@@ -157,14 +60,14 @@ const Tokens = () => {
                                                 <p style={{ fontSize: '10px', paddingLeft: '3px' }}>{obj.logoTitle}</p>
                                             </Col>
                                         </Row>
-                                        <Card.Title className='heading-font' style={{ fontSize: '14px' }}>{obj.title}</Card.Title>
+                                        <Card.Title className='heading-font' style={{ fontSize: '14px' }}>{obj.cardTitle}</Card.Title>
                                         <Row style={{ alignItems: 'center' }}>
                                             <Col className='col-3'>
                                                 <h3 className='heading-font mb-0'>{obj.value}</h3>
                                             </Col>
 
                                             <Col className='col-9 ps-0'>
-                                                <p style={{ fontSize: '10px' }}>{obj.valueTitle}</p>
+                                                <p style={{ fontSize: '10px' }}>TOTAL</p>
                                             </Col>
                                         </Row>
 

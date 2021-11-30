@@ -1,62 +1,11 @@
 import React from 'react'
-import { Card, Row, Col, Container, Image, Button } from 'react-bootstrap'
+import { Card, Row, Col, Container } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 
 const GarrysCollectionTokens = () => {
 
-    const data = useSelector(s => s.cardReducer)
-    console.log(data.tokenCard)
-
-    const tokenArray = [
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        },
-        {
-            cardImage: "/assets/images/Group 177.svg",
-            title: "Rare",
-            value: '40',
-            valueTitle: 'TOTAL'
-        }
-    ]
+    const selector = useSelector(s => s.cardReducer)
+    const { garryCollectionArray } = selector
 
     return (
         <>
@@ -64,7 +13,7 @@ const GarrysCollectionTokens = () => {
             <Container className='custom-contain-sm'>
                 <Row className='mx-sm-1 mx-1'>
                     <Col className='ps-0'>
-                        <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>{tokenArray.length} Tokens</span>
+                        <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>{garryCollectionArray.length} Tokens</span>
                     </Col>
                     <Col className='pe-0' style={{textAlign:'right'}}>
                         <span style={{fontFamily:'Poppins-Semibold', fontSize:'18px'}}>View all</span>
@@ -74,8 +23,8 @@ const GarrysCollectionTokens = () => {
                 <hr className='card-header-line' />
 
                 <Row xs={1} md={4} className="g-4 card-wrapper py-5">
-                    {tokenArray.map((obj, ind) => (
-                        <Col sm={6} xs={12} md={3} lg={3} key={ind} >
+                    {garryCollectionArray.map((obj, ind) => (
+                        <Col className='custom-card-container' sm={6} xs={12} md={4} lg={3} key={ind} >
                             <Card style={{ borderRadius: '12px' }}>
                                 <Card.Img style={{ borderTopLeftRadius: '3%', borderTopRightRadius: '3%', backgroundColor: '#F8F8F8' }} variant="top" src={obj.cardImage} />
                                 <Card.Body className='p-2'>
@@ -85,7 +34,7 @@ const GarrysCollectionTokens = () => {
                                             <h3 className='heading-font mb-0' style={{ fontSize: '16px', fontFamily: 'Poppins-bold' }}>{obj.value}</h3>
                                         </Col>
                                         <Col className='col-12'>
-                                            <p style={{ fontSize: '12px' }}>{obj.valueTitle}</p>
+                                            <p style={{ fontSize: '12px' }}>TOTAL</p>
                                         </Col>
                                     </Row>
                                 </Card.Body>

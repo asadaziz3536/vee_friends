@@ -18,14 +18,21 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+body {
+    text-shadow: 0 0 1px rgb(0 0 0 / 30%);
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+}
+
 a {
     text-decoration: none !important;
-    font-size: 12px !important;
 }
-button:active{
+
+button:active {
     box-shadow: none !important;
 }
-button:focus{
+
+button:focus {
     box-shadow: none !important;
 }
 
@@ -49,22 +56,15 @@ p {
 }
 
 .btn-primary:hover {
-    background:#0ad900 !important;
+    background: #0ad900 !important;
     border-color: transparent !important;
 }
 
-
-/* .btn-primary:focus {
-    background: linear-gradient(to right, #0ad900, #67b938) !important;
-    border-color: transparent !important;
-    outline: none !important;
+.tag-icon {
+    color: rgb(161 161 161);
+    /* padding: 0px auto !important; */
+    margin-right: 4px;
 }
-
-.btn-primary:active {
-    background: linear-gradient(to right, #0ad900, #67b938) !important;
-    border-color: transparent !important;
-    outline: none !important;
-} */
 
 .triple-equal-sign {
     margin: 2px;
@@ -107,7 +107,7 @@ hr {
     border: 1px solid transparent !important;
     padding: 11px 18px !important;
     font-family: "Poppins-Bold";
-    font-size: 10px !important;
+    font-size: 12px !important;
 }
 
 .header-wrapper .navbar-collapse .custom-btn {
@@ -142,6 +142,8 @@ h6 {
 .announcement-bar {
     background-color: #3db649;
     color: #fff;
+    /* font-family: 'Poppins-Regular';
+    font-size: 18px; */
 }
 
 .custom-nav {
@@ -151,11 +153,13 @@ h6 {
 .custom-nav a {
     font-family: "Poppins-Bold";
     color: #000;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .theme-accent {
     color: #b704b7;
+    font-family: "Poppins-Bold";
+    font-size: 15px;
 }
 
 
@@ -171,7 +175,7 @@ h6 {
 }
 
 .hero-section p {
-    font-family: "Poppins-Bold";
+    font-family: "Poppins-Semibold";
 }
 
 .hero-section h1 {
@@ -308,12 +312,13 @@ h6 {
 /* Latest Posts */
 
 .latestposts-section {
-    margin-top: -26px;
+    margin-top: -22px;
     padding-bottom: 70px;
 }
-.latestposts-section button:focus{
- background: #0ad900;
- border: 1px solid transparent;
+
+.latestposts-section button:focus {
+    background: #0ad900;
+    border: 1px solid transparent;
 }
 
 .latestposts-section .card {
@@ -388,7 +393,7 @@ h6 {
 
 .latestposts-section .card-link {
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
     font-family: "Poppins-Bold";
     text-decoration: none;
 }
@@ -403,42 +408,6 @@ h6 {
     display: flex;
     align-items: center;
 }
-
-
-/* .category-pill.pink {
-    border-color: #f7c8d1;
-    color: #f7c8d1;
-}
-
-.category-pill.brown {
-    border-color: #bc6c53;
-    color: #bc6c53;
-}
-
-.category-pill.yellow {
-    border-color: #f8db3c;
-    color: #f8db3c;
-}
-
-.category-pill.green {
-    border-color: #31b982;
-    color: #31b982;
-}
-
-.category-pill.purple {
-    border-color: #800080;
-    color: #800080;
-}
-
-.category-pill.red {
-    border-color: #f72727;
-    color: #f72727;
-}
-
-.category-pill.darkgreen {
-    border-color: #008080;
-    color: #008080;
-} */
 
 @media screen and (min-width: 1200px) {
     .latestposts-section .card {
@@ -465,7 +434,7 @@ h6 {
 /* TimeLine Section  */
 
 .timeline-wrapper {
-    padding: 30px 0px;
+    padding: 40px 0px;
 }
 
 .timeline {
@@ -839,7 +808,7 @@ h6 {
 }
 
 .postdetail-feature a:hover {
-    box-shadow: 0px 3px 4px;
+    box-shadow: 0px 3px 4px #0ad900;
 }
 
 .postdetail-feature .stats-pannel .small-desc {
@@ -1223,8 +1192,8 @@ h6 {
 
 .alphabet-link {
     font-family: "Poppins-Bold";
-    font-size: 12px;
-    /* padding: 0px auto; */
+    font-size: 13px;
+    color: black;
 }
 
 .screen-header {
@@ -1276,16 +1245,23 @@ h6 {
 }
 
 .card-wrapper .slider-card-img {
-    background: #F8F8F8;
+    background: #f8f8f8;
     padding-bottom: 1rem;
 }
 
 .card-wrapper .card {
-    border: 3px solid rgba(170, 170, 170, .125);
+    border: 3px solid rgba(170, 170, 170, 0.125);
 }
 
 .card-wrapper .card-footer p {
     color: white !important;
+}
+
+@media only screen and (max-width: 575px) {
+    .card-wrapper .custom-card-container {
+        width: 75%;
+        margin: 10px auto;
+    }
 }
 
 
